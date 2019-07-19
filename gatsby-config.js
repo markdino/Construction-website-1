@@ -1,8 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `RMMC & RDC`,
+    fullTitle: `RM Mangubat Construction & Realty Development Corporation`,
+    description: `General Contructor, Developer, Construction Company`,
+    email: `rmmangubat1@gmail.com`,
+
+    author: {
+      name: `Mark Dino Pelonia`,
+      position: `Web Developer`,
+      email: `markdinopelonia447@gmail.com`,
+      contact: `(+63) 946 290 9678`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +23,21 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout`),
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
