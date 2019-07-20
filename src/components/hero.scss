@@ -1,0 +1,56 @@
+.hero {
+  background-image: url("../images/bg.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  height: 80vh;
+
+  .hero-wrapper {
+    background: rgba($color: #000, $alpha: 0.4);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+
+    .hero-content {
+      padding: 0px 20px;
+      margin: 0px auto;
+
+      .title {
+        font-weight: bold;
+        font-size: 4.5em;
+        color: #fff;
+      }
+
+      @media screen and (max-width: 990px) {
+        .title {
+          font-size: 3em;
+        }
+      }
+
+      .h-separator {
+        border-style: solid;
+        border-width: 1.8px;
+        border-color: lightgreen;
+        width: 100px;
+      }
+
+      .hero-description {
+        color: rgba(#fff, 0.8);
+      }
+
+      .hero-buttons {
+        .btn {
+          margin: 5px 5px;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    height: 95vh;
+  }
+}
