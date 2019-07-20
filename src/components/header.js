@@ -28,7 +28,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <Navbar color="light" light fixed expand="md" className="navbar">
+        <Navbar color="dark" dark fixed expand="md" className="navbar">
           <Container>
             <NavbarBrand href="/">
               <img src={logo} alt="RDC Logo" />
@@ -40,7 +40,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "darkgreen", fontWeight: "bold" }}
+                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
                     to="/"
                   >
                     Home
@@ -49,7 +49,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "darkgreen", fontWeight: "bold" }}
+                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
                     to="/services"
                   >
                     Services
@@ -58,7 +58,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "darkgreen", fontWeight: "bold" }}
+                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
                     to="/projects"
                   >
                     Projects
@@ -67,7 +67,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "darkgreen", fontWeight: "bold" }}
+                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
                     to="/carrers"
                   >
                     Careers
@@ -76,7 +76,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "darkgreen", fontWeight: "bold" }}
+                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
                     to="/about"
                   >
                     About Us
@@ -85,7 +85,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "darkgreen", fontWeight: "bold" }}
+                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
                     to="/contact"
                   >
                     Contact
