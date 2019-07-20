@@ -3,7 +3,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  height: 80vh;
+  height: 90vh;
 
   .hero-wrapper {
     background: rgba($color: #000, $alpha: 0.4);
@@ -49,6 +49,7 @@
         .btn {
           margin: 5px 5px;
           width: 200px;
+          color: #fff;
         }
       }
     }
@@ -57,6 +58,6 @@
 
 @media screen and (max-width: 1000px) {
   .hero {
-    height: 95vh;
+    height: 100vh;
   }
 }
