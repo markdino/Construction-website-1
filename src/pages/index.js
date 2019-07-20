@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import Hero from "../components/hero"
 import Layout from "../components/layout"
+import Services from "../components/services"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -25,6 +26,7 @@ const IndexPage = () => {
     <div>
       <Layout data={data.site.siteMetadata}>
         <Hero title={fullTitle} description={description} />
+        <Services />
       </Layout>
     </div>
   )
