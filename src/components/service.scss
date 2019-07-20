@@ -1,0 +1,36 @@
+.service-card {
+  margin-bottom: 50px;
+  padding: 50px 40px;
+  border: 6px solid #e5e7e9;
+  text-align: center;
+
+  .service-icon {
+    position: absolute;
+    top: -37px;
+    left: 50%;
+    width: 168px;
+    height: 92px;
+    background-color: #fff;
+    transform: translateX(-50%);
+
+    img {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h4:hover {
+    color: green;
+  }
+
+  p {
+    color: #9b9b9b;
+    font-size: 14px;
+  }
+}
