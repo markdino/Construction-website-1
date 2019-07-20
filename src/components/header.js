@@ -28,7 +28,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <Navbar color="dark" dark fixed expand="md" className="navbar">
+        <Navbar color="dark" dark expand="md" className="navbar fixed-top">
           <Container>
             <NavbarBrand href="/">
               <img src={logo} alt="RDC Logo" />
