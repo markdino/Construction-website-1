@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `RMMC & RDC`,
     fullTitle: `RM Mangubat Construction & Realty Development Corporation`,
-    description: `General Contructor, Developer, Construction Company`,
+    description: `Engaged in Site Developing, General Building Constructions, Repair/Renovation of Buildings, etc.`,
     email: `rmmangubat1@gmail.com`,
 
     author: {
@@ -24,12 +24,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve(`./src/components/layout`),
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-layout`,
+    //   options: {
+    //     component: require.resolve(`./src/components/layout`),
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
