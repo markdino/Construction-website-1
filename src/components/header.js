@@ -9,19 +9,7 @@ import {
   Nav,
   NavItem,
 } from "reactstrap"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import logo from "../images/brand-logo.png"
-=======
-import logo from "../images/TanPEL.png"
->>>>>>> fix: Change logo size and file
-=======
-import logo from "../images/gatsby-icon.png"
->>>>>>> fix: Restore name for logo (gatsby-icon.png should not be rename)
-=======
-import logo from "../images/TanPEL.png"
->>>>>>> fix: Change logo size and file
 
 class Header extends Component {
   constructor(props) {
