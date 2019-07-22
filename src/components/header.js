@@ -10,7 +10,7 @@ import {
   Nav,
   NavItem,
 } from "reactstrap"
-import logo from "../images/logo.png"
+import logo from "../images/gatsby-icon.png"
 
 class Header extends Component {
   constructor(props) {
@@ -40,7 +40,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
+                    activeClassName="nav-active"
                     to="/"
                   >
                     Home
@@ -49,7 +49,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
+                    activeClassName="nav-active"
                     to="/services"
                   >
                     Services
@@ -58,7 +58,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
+                    activeClassName="nav-active"
                     to="/projects"
                   >
                     Projects
@@ -67,7 +67,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
+                    activeClassName="nav-active"
                     to="/carrers"
                   >
                     Careers
@@ -76,7 +76,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
+                    activeClassName="nav-active"
                     to="/about"
                   >
                     About Us
@@ -85,7 +85,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeStyle={{ color: "lightgreen", fontWeight: "bold" }}
+                    activeClassName="nav-active"
                     to="/contact"
                   >
                     Contact
