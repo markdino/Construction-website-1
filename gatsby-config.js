@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `RMMC & RDC`,
-    fullTitle: `RM Mangubat Construction & Realty Development Corporation`,
-    description: `Engaged in Site Developing, General Building Constructions, Repair/Renovation of Buildings, etc.`,
-    about: `Since our incorporation in 1981, we've grown from a regional organization to a multi-faceted, national presence in the industry with headquarters in New York.`,
-    email: `rmmangubat1@gmail.com`,
+    title: `TP Construction`,
+    fullTitle: `TANPEL CONSTRUCTION`,
+    description: `Listen better | Plan better | Build better.`,
+    email: `info@tanpelconstruction.com`,
 
     author: {
       name: `Mark Dino Pelonia`,
