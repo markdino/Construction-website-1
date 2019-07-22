@@ -10,7 +10,7 @@ import {
   Nav,
   NavItem,
 } from "reactstrap"
-import logo from "../images/TanPEL.png"
+import logo from "../images/gatsby-icon.png"
 
 class Header extends Component {
   constructor(props) {
