@@ -1,13 +1,12 @@
 .header {
-  .navbar {
-    a:hover {
-      color: lightgreen !important;
-    }
-  }
   .navbar-brand {
     img {
       height: 50px;
       margin-right: 10px;
     }
+  }
+
+  .nav-active {
+    font-weight: bold;
   }
 }
