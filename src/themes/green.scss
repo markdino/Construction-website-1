@@ -22,8 +22,8 @@ $color-hover: #218838;
 }
 
 // -------- Service component --------
-.service-card {
-  h4:hover {
+.service-card:hover {
+  h4 {
     color: $color-default;
   }
 }
