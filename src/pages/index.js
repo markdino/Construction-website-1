@@ -13,10 +13,9 @@ import Services from "../components/services"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query SiteMetadataQuery {
       site {
         siteMetadata {
-          title
           fullTitle
           description
         }
@@ -28,7 +27,7 @@ const IndexPage = () => {
 
   return (
     <div>
-      <Layout data={data.site.siteMetadata}>
+      <Layout>
         <Hero title={fullTitle} description={description} />
         <Services />
       </Layout>
