@@ -1,0 +1,45 @@
+.about {
+  padding: 100px 0px;
+  background-color: #f0f3f4;
+
+  .about-content {
+    margin: 0px 50px;
+    h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .about-description {
+      font-size: 0.8rem;
+      color: #7b7d7d;
+      margin: 20px 0px;
+    }
+
+    .about-list {
+      list-style: none;
+      li {
+        font-weight: bold;
+      }
+    }
+
+    .about-list li::before {
+      content: "\2022";
+      font-weight: bold;
+      font-size: 2em;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+    }
+    .btn {
+      color: #000;
+      padding: 10px 60px;
+      margin: 10px 0px;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+  }
+}
