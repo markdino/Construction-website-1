@@ -4,6 +4,7 @@ module.exports = {
     fullTitle: `TANPEL CONSTRUCTION`,
     description: `Listen better | Plan better | Build better.`,
     about: `Since our incorporation in 1981, we've grown from a regional organization to a multi-faceted, national presence in the industry with headquarters in New York.`,
+
     email: `info@tanpelconstruction.com`,
 
     author: {
