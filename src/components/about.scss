@@ -32,7 +32,6 @@
       margin-left: -1em;
     }
     .btn {
-      color: #000;
       padding: 10px 60px;
       margin: 10px 0px;
     }
@@ -40,6 +39,16 @@
   @media screen and (max-width: 760px) {
     .row {
       flex-direction: column-reverse;
+    }
+
+    .about-content {
+      h2 {
+        font-size: 3rem;
+      }
+
+      .btn {
+        padding: 10px 40px;
+      }
     }
   }
 }
