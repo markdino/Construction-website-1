@@ -6,7 +6,7 @@ import "./hero.scss"
 
 const Hero = ({ title, description }) => {
   return (
-    <div className="hero">
+    <div className="hero" id="hero">
       <section className="hero-wrapper">
         <Container>
           <main className="hero-content">

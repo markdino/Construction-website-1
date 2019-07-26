@@ -6,7 +6,6 @@ import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
 } from "reactstrap"
@@ -30,10 +29,10 @@ class Header extends Component {
       <div className="header">
         <Navbar color="dark" dark expand="md" className="navbar fixed-top">
           <Container>
-            <NavbarBrand href="/">
+            <Link to="/#hero" className="navbar-brand">
               <img src={logo} alt="RDC Logo" />
               {this.props.siteTitle}
-            </NavbarBrand>
+            </Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
