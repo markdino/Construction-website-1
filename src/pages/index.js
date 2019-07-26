@@ -7,8 +7,10 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../themes/green.scss"
 import "../themes/orange.scss"
 
+// ---------- Components ----------
 import Hero from "../components/hero"
 import Services from "../components/services"
+import About from "../components/about"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -17,17 +19,19 @@ const IndexPage = () => {
         siteMetadata {
           fullTitle
           description
+          about
         }
       }
     }
   `)
 
-  const { fullTitle, description } = data.site.siteMetadata
+  const { fullTitle, description, about } = data.site.siteMetadata
 
   return (
     <div>
       <Hero title={fullTitle} description={description} />
       <Services />
+      <About about={about} />
     </div>
   )
 }

@@ -3,6 +3,7 @@ module.exports = {
     title: `TP Construction`,
     fullTitle: `TANPEL CONSTRUCTION`,
     description: `Listen better | Plan better | Build better.`,
+    about: `Since our incorporation in 1981, we've grown from a regional organization to a multi-faceted, national presence in the industry with headquarters in New York.`,
     email: `info@tanpelconstruction.com`,
 
     author: {
@@ -47,7 +48,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/brand-logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
