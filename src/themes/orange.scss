@@ -47,6 +47,8 @@ $color-hover: #d39e00;
   border-color: $color-default;
 }
 
+// -------- About --------
+
 .about {
   .about-list li::before {
     color: $color-hover;
@@ -66,5 +68,23 @@ $color-hover: #d39e00;
     background-color: $color-default;
     border-color: $color-light;
     color: #fff !important;
+  }
+}
+
+// -------- Parallax --------
+.theme-wrapper {
+  background: rgba($color-hover, 0.5);
+}
+
+.quote {
+  .btn-secondary {
+    background-color: $color-light;
+    border-color: $color-light;
+    color: #000;
+  }
+
+  .btn-secondary:hover {
+    background-color: #fff;
+    border-color: #fff;
   }
 }
