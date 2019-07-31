@@ -11,6 +11,7 @@ import "../themes/orange.scss"
 import Hero from "../components/hero"
 import Services from "../components/services"
 import About from "../components/about"
+import QuoteUs from "../components/quote"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -32,6 +33,7 @@ const IndexPage = () => {
       <Hero title={fullTitle} description={description} />
       <Services />
       <About about={about} />
+      <QuoteUs />
     </div>
   )
 }
