@@ -42,12 +42,15 @@
     }
 
     .about-content {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
       h2 {
-        font-size: 3rem;
+        text-align: center;
       }
 
-      .btn {
-        padding: 10px 40px;
+      .about-btn-lnk {
+        align-self: center;
       }
     }
   }

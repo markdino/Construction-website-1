@@ -1,0 +1,44 @@
+.quote {
+  height: 100%;
+  overflow: hidden;
+}
+.parallax-container {
+  height: 100%;
+  background-image: url("../images/parallax-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-content {
+  background: rgba(#000, 0.6);
+  color: #fff;
+  text-align: center;
+
+  h3 {
+    font-weight: bold;
+    // min-width: 300px;
+  }
+
+  .btn {
+    padding: 10px 40px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+  }
+}
+
+.center {
+  margin: 0px auto;
+  align-items: center;
+  text-align: center;
+}
+
+.section-lg {
+  padding: 100px 0px;
+}
+
+.flex-sb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
