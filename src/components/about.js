@@ -7,7 +7,7 @@ import "./about.scss"
 
 const About = ({ about }) => {
   return (
-    <div className="about">
+    <div className="about section-lg">
       <Container>
         <Row>
           <Col md="6">
