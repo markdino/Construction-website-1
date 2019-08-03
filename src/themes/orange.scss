@@ -1,3 +1,4 @@
+@import "./bootstrap-color.scss";
 // -------- Set of colors --------
 $color-light: #fef502;
 $color-default: #ffc107;
@@ -86,5 +87,11 @@ $color-hover: #d39e00;
   .btn-secondary:hover {
     background-color: #fff;
     border-color: #fff;
+  }
+}
+
+.gallery-cat {
+  .badge-light:hover {
+    background-color: $warning;
   }
 }
