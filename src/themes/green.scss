@@ -78,6 +78,7 @@ $color-hover: #218838;
   background: rgba($color-hover, 0.5);
 }
 
+// -------- Quote --------
 .quote {
   .btn-secondary {
     background-color: $color-light;
@@ -91,8 +92,25 @@ $color-hover: #218838;
   }
 }
 
+// -------- Project --------
 .gallery-cat {
   .badge-light:hover {
     background-color: $success;
+  }
+}
+
+// -------- News --------
+.news-thumbnail-hover {
+  background: rgba($color-default, 0.5);
+}
+
+.news-title:hover,
+.news-date p:hover {
+  color: $warning;
+}
+
+.news-date {
+  svg {
+    stroke: $warning;
   }
 }
