@@ -4,6 +4,19 @@ $color-light: lightgreen;
 $color-default: #28a745;
 $color-hover: #218838;
 
+// -------- Color for highlighting --------
+// Codes for Firefox:
+*::-moz-selection {
+  background-color: $color-default;
+  color: #fff;
+}
+
+// Codes for other Browsers
+*::selection {
+  background-color: $color-default;
+  color: #fff;
+}
+
 // -------- Header component --------
 .header .navbar {
   .nav-active {
@@ -106,11 +119,11 @@ $color-hover: #218838;
 
 .news-title:hover,
 .news-date p:hover {
-  color: $warning;
+  color: $success;
 }
 
 .news-date {
   svg {
-    stroke: $warning;
+    stroke: $success;
   }
 }
