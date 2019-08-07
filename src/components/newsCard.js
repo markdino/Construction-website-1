@@ -18,7 +18,9 @@ const NewsCard = () => {
         <img src={img1} alt="etienne-beauregard-riverin" />
       </section>
       <section className="news-content">
-        <h4 className="news-title">title</h4>
+        <Link to="/news">
+          <h4 className="news-title">title</h4>
+        </Link>
         <section className="news-date">
           <ClockSVG /> <p>Feb. 04, 2019</p>
         </section>
