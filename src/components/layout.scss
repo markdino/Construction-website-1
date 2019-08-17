@@ -12,8 +12,26 @@
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .section-lg {
   padding: 100px 0px;
+}
+
+.bg-light-gray {
+  background-color: #f2f3f8;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.flex-sb {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -3,6 +3,20 @@
 $color-light: #fef502;
 $color-default: #ffc107;
 $color-hover: #d39e00;
+
+// -------- Color for highlighting --------
+// Codes for Firefox:
+*::-moz-selection {
+  background-color: $color-default;
+  color: #fff;
+}
+
+// Codes for other Browsers
+*::selection {
+  background-color: $color-default;
+  color: #fff;
+}
+
 // -------- Header component --------
 .header .navbar {
   .nav-active {
@@ -77,6 +91,7 @@ $color-hover: #d39e00;
   background: rgba($color-hover, 0.5);
 }
 
+// -------- Quote --------
 .quote {
   .btn-secondary {
     background-color: $color-light;
@@ -90,8 +105,25 @@ $color-hover: #d39e00;
   }
 }
 
+// -------- Project --------
 .gallery-cat {
   .badge-light:hover {
     background-color: $warning;
+  }
+}
+
+// -------- News --------
+.news-thumbnail-hover {
+  background: rgba($color-default, 0.5);
+}
+
+.news-title:hover,
+.news-date p:hover {
+  color: $warning;
+}
+
+.news-date {
+  svg {
+    stroke: $warning;
   }
 }

@@ -13,6 +13,7 @@ import Services from "../components/services"
 import About from "../components/about"
 import QuoteUs from "../components/quote"
 import Project from "../components/project"
+import News from "../components/news"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -36,6 +37,7 @@ const IndexPage = () => {
       <About about={about} />
       <Project />
       <QuoteUs />
+      <News />
     </div>
   )
 }
