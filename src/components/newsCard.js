@@ -4,31 +4,26 @@ import ClockSVG from "../assets/svg/clock.svg"
 import LinkSVG from "../assets/svg/link.svg"
 import "./newsCard.scss"
 
-import img1 from "../images/projects/etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.jpg"
-
-const NewsCard = () => {
+const NewsCard = ({ news }) => {
+  const { title, date, about, img, slug } = news
   return (
     <article className="news-card">
       <section className="news-thumbnail">
-        <Link to="/news">
+        <Link to={`/news/${slug}`}>
           <section className="news-thumbnail-hover">
             <LinkSVG />
           </section>
         </Link>
-        <img src={img1} alt="etienne-beauregard-riverin" />
+        <img src={img} alt={title} />
       </section>
       <section className="news-content">
-        <Link to="/news">
-          <h4 className="news-title">title</h4>
+        <Link to={`/news/${slug}`}>
+          <h4 className="news-title">{title}</h4>
         </Link>
         <section className="news-date">
-          <ClockSVG /> <p>Feb. 04, 2019</p>
+          <ClockSVG /> <p>{date}</p>
         </section>
-        <p className="news-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          dolores debitis consectetur inventore nisi voluptate accusantium fugit
-          velit tempore nostrum.
-        </p>
+        <p className="news-text">{about}</p>
       </section>
     </article>
   )
