@@ -9,7 +9,6 @@ import {
   Nav,
   NavItem,
 } from "reactstrap"
-import logo from "../images/brand-logo.png"
 
 class Header extends Component {
   constructor(props) {
@@ -25,13 +24,14 @@ class Header extends Component {
     })
   }
   render() {
+    const { siteTitle, logo } = this.props
     return (
       <div className="header">
         <Navbar color="dark" dark expand="md" className="navbar fixed-top">
           <Container>
             <Link to="/#hero" className="navbar-brand">
               <img src={logo} alt="RDC Logo" />
-              {this.props.siteTitle}
+              {siteTitle}
             </Link>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
