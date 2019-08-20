@@ -5,6 +5,18 @@ module.exports = {
     description: `Listen better | Plan better | Build better.`,
     about: `Since our incorporation in 1981, we've grown from a regional organization to a multi-faceted, national presence in the industry with headquarters in New York.`,
     email: `info@tanpelconstruction.com`,
+    social: {
+      facebook: `https://facebook.com/tanpelconstruction`,
+      twitter: `https://twitter.com/tanpelconstruction`,
+      instagram: `https://instagram.com/tanpelconstruction`,
+      linkedin: `https://linkedin.com/in/tanpelconstruction`,
+    },
+    contact: `(+63) 912 345 6789`,
+    address: `Bermuda Subd., Pamplona 3, Las Pinas City, Philippines, 1740`,
+    opening: {
+      day: `Monday - Friday`,
+      hour: `8:00am - 5:00pm`,
+    },
 
     author: {
       name: `Mark Dino Pelonia`,

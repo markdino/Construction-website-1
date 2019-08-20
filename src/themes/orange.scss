@@ -127,3 +127,29 @@ $color-hover: #d39e00;
     stroke: $warning;
   }
 }
+
+// -------- Footer --------
+footer {
+  .opening,
+  .footer-contact {
+    svg {
+      stroke: $warning;
+    }
+  }
+
+  .footer-social {
+    a {
+      border-color: $warning;
+    }
+
+    a:hover {
+      background-color: $warning;
+      .fill-svg {
+        fill: #000;
+      }
+      .stroke-svg {
+        stroke: #000;
+      }
+    }
+  }
+}

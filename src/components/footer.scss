@@ -1,0 +1,106 @@
+footer {
+  background-image: url("../images/philippines.jpg");
+  background-size: cover;
+  color: #fff;
+
+  .footer-wrapper {
+    margin: 0px;
+    background: rgba($color: #000, $alpha: 0.6);
+  }
+
+  h4 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 0px 20px;
+  }
+
+  h6 {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  hr {
+    border-color: rgba($color: #fff, $alpha: 0.6);
+    margin: 5px 0px;
+  }
+
+  .img-badge {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      width: 90px;
+      height: 100%;
+      margin: 5px 0px;
+    }
+  }
+
+  .footer-aboutus {
+    p {
+      text-align: justify;
+      font-size: 0.8rem;
+    }
+
+    .opening {
+      margin-left: 40px;
+
+      svg {
+        height: 15px;
+        width: 15px;
+        margin: 0px 15px;
+      }
+    }
+  }
+
+  .footer-contact {
+    ul {
+      list-style: none;
+    }
+
+    .row {
+      flex-flow: nowrap;
+      margin: 10px 0px;
+    }
+
+    svg {
+      height: 20px;
+      width: 20px;
+      margin: 0px 15px;
+    }
+  }
+
+  #footer-address {
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  .footer-social {
+    .row {
+      margin: 0px 0px 10px;
+    }
+
+    a {
+      padding: 7px 10px 9px;
+      margin-right: 10px;
+      border-width: 2px;
+      border-color: #fff;
+      border-style: solid;
+      border-radius: 50%;
+      color: #fff;
+    }
+
+    .fill-svg {
+      stroke-width: 0;
+      fill: #fff;
+    }
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

@@ -127,3 +127,29 @@ $color-hover: #218838;
     stroke: $success;
   }
 }
+
+// -------- Footer --------
+footer {
+  .opening,
+  .footer-contact {
+    svg {
+      stroke: $success;
+    }
+  }
+
+  .footer-social {
+    a {
+      border-color: $success;
+    }
+
+    a:hover {
+      background-color: $success;
+      .fill-svg {
+        fill: #000;
+      }
+      .stroke-svg {
+        stroke: #000;
+      }
+    }
+  }
+}
