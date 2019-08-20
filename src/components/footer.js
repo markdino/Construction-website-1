@@ -19,7 +19,8 @@ import ISO45001 from "../images/badge/ISO-45001.png"
 import PCAB from "../images/badge/pcab.png"
 import PCA from "../images/badge/pca.png"
 
-const Footer = () => {
+const Footer = ({ siteMetadata }) => {
+  const { about, email, social, contact, address, opening } = siteMetadata
   return (
     <footer>
       <section className="footer-wrapper">
@@ -37,23 +38,35 @@ const Footer = () => {
             </Col>
             <Col className="footer-aboutus" lg="4" sm="6">
               <h4>About Us</h4>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Expedita, quae! Accusantium, perspiciatis rem commodi temporibus
-                dicta similique suscipit eum dolorem?
-              </p>
+              <p>{about}</p>
               <section className="footer-social">
                 <Row>
-                  <a href="#">
+                  <a
+                    href={social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FacebookSVG className="fill-svg" />
                   </a>
-                  <a href="#">
+                  <a
+                    href={social.twitter}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <TwitterSVG className="fill-svg" />
                   </a>
-                  <a href="#">
+                  <a
+                    href={social.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <InstagramSVG className="stroke-svg" />
                   </a>
-                  <a href="#">
+                  <a
+                    href={social.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LinkedinSVG className="stroke-svg" />
                   </a>
                 </Row>
@@ -62,11 +75,11 @@ const Footer = () => {
               <section className="opening">
                 <hr />
                 <Row className="align-items-center">
-                  <Calendar /> Monday - Friday
+                  <Calendar /> {opening.day}
                 </Row>
                 <hr />
                 <Row className="align-items-center">
-                  <Clock /> 8:00am - 5:00pm
+                  <Clock /> {opening.hour}
                 </Row>
                 <hr />
               </section>
@@ -75,17 +88,16 @@ const Footer = () => {
               <h4>Contacts</h4>
               <ul>
                 <li className='row className="align-items-start'>
-                  <Smartphone /> (+63) 912 345 6789
+                  <Smartphone /> {contact}
                 </li>
                 <li className='row className="align-items-start'>
-                  <Mail /> info@tanpelconstruction.com
+                  <Mail /> {email}
                 </li>
                 <li
                   id="footer-address"
                   className='row className="align-items-start'
                 >
-                  <Pin /> Bermuda Subd., Pamplona 3, Las Pinas City,
-                  Philippines, 1740
+                  <Pin /> {address}
                 </li>
                 <li></li>
               </ul>
