@@ -112,5 +112,16 @@ footer {
     color: $secondary;
     font-size: 0.9rem;
     background-color: rgba($color: #000000, $alpha: 0.6);
+    white-space: nowrap;
+
+    a {
+      color: $secondary;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #fff;
+    }
   }
 }

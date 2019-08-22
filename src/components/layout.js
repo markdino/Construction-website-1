@@ -40,6 +40,8 @@ const Layout = ({ children }) => {
           }
           author {
             name
+            website
+            position
           }
         }
       }
