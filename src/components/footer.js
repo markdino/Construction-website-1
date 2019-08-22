@@ -5,6 +5,7 @@ import "./footer.scss"
 import Calendar from "../assets/svg/calendar.svg"
 import Clock from "../assets/svg/clock.svg"
 import Smartphone from "../assets/svg/smartphone.svg"
+import Telephone from "../assets/svg/phone.svg"
 import Mail from "../assets/svg/mail.svg"
 import Pin from "../assets/svg/map-pin.svg"
 
@@ -88,7 +89,10 @@ const Footer = ({ siteMetadata }) => {
               <h4>Contacts</h4>
               <ul>
                 <li className='row className="align-items-start'>
-                  <Smartphone /> {contact}
+                  <Smartphone /> {contact.mobile}
+                </li>
+                <li className='row className="align-items-start'>
+                  <Telephone /> {contact.telephone}
                 </li>
                 <li className='row className="align-items-start'>
                   <Mail /> {email}
