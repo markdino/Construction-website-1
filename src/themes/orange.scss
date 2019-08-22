@@ -139,7 +139,7 @@ footer {
 
   .footer-social {
     a {
-      border-color: $warning;
+      border-color: $warning !important;
     }
 
     a:hover {
