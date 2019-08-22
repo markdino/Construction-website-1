@@ -21,7 +21,16 @@ import PCAB from "../images/badge/pcab.png"
 import PCA from "../images/badge/pca.png"
 
 const Footer = ({ siteMetadata }) => {
-  const { about, email, social, contact, address, opening } = siteMetadata
+  const {
+    title,
+    about,
+    email,
+    social,
+    contact,
+    address,
+    opening,
+    author,
+  } = siteMetadata
   return (
     <footer>
       <section className="footer-wrapper">
@@ -108,6 +117,9 @@ const Footer = ({ siteMetadata }) => {
             </Col>
           </Row>
         </Container>
+        <Row className="footer-credits justify-content-center">
+          {`${title} © 2019 | Code and design by: ${author.name}`}
+        </Row>
       </section>
     </footer>
   )

@@ -38,6 +38,9 @@ const Layout = ({ children }) => {
             day
             hour
           }
+          author {
+            name
+          }
         }
       }
     }
