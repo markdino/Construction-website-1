@@ -115,11 +115,12 @@ footer {
 
     a {
       color: $secondary;
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     a:hover {
       color: #fff;
+      text-decoration: none;
     }
   }
 }
