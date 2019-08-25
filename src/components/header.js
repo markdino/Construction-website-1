@@ -54,7 +54,7 @@ class Header extends Component {
                   <Link
                     className="nav-link"
                     activeClassName="nav-active"
-                    to="/services"
+                    to="/services/#services"
                   >
                     Services
                   </Link>
