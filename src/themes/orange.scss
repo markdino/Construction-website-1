@@ -153,3 +153,10 @@ footer {
     }
   }
 }
+
+// -------- PageHeader --------
+.page-header {
+  h2 {
+    text-decoration-color: $warning !important;
+  }
+}
