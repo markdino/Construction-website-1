@@ -25,6 +25,13 @@ const AboutPage = () => {
       <Container>
         <main className="about-page section-lg">
           <h2 className="header-title center">{title}</h2>
+          <section className="about-content">
+            <img
+              src={companyThumbnail}
+              alt="Company Thumbnail"
+              className="img-thumbnail"
+            />
+          </section>
         </main>
       </Container>
     </section>
