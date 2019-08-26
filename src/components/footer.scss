@@ -1,3 +1,4 @@
+@import "../themes/bootstrap-color.scss";
 footer {
   background-image: url("../images/philippines.jpg");
   background-size: cover;
@@ -102,6 +103,24 @@ footer {
     svg {
       height: 20px;
       width: 20px;
+    }
+  }
+
+  .footer-credits {
+    margin: 0px;
+    padding: 20px;
+    color: $secondary;
+    font-size: 0.9rem;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+
+    a {
+      color: $secondary;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #fff;
+      text-decoration: none;
     }
   }
 }

@@ -5,6 +5,7 @@ import "./footer.scss"
 import Calendar from "../assets/svg/calendar.svg"
 import Clock from "../assets/svg/clock.svg"
 import Smartphone from "../assets/svg/smartphone.svg"
+import Telephone from "../assets/svg/phone.svg"
 import Mail from "../assets/svg/mail.svg"
 import Pin from "../assets/svg/map-pin.svg"
 
@@ -20,7 +21,16 @@ import PCAB from "../images/badge/pcab.png"
 import PCA from "../images/badge/pca.png"
 
 const Footer = ({ siteMetadata }) => {
-  const { about, email, social, contact, address, opening } = siteMetadata
+  const {
+    title,
+    about,
+    email,
+    social,
+    contact,
+    address,
+    opening,
+    author,
+  } = siteMetadata
   return (
     <footer>
       <section className="footer-wrapper">
@@ -88,7 +98,10 @@ const Footer = ({ siteMetadata }) => {
               <h4>Contacts</h4>
               <ul>
                 <li className='row className="align-items-start'>
-                  <Smartphone /> {contact}
+                  <Smartphone /> {contact.mobile}
+                </li>
+                <li className='row className="align-items-start'>
+                  <Telephone /> {contact.telephone}
                 </li>
                 <li className='row className="align-items-start'>
                   <Mail /> {email}
@@ -104,6 +117,17 @@ const Footer = ({ siteMetadata }) => {
             </Col>
           </Row>
         </Container>
+        <Row className="footer-credits justify-content-center">
+          {` ${title} © 2019 || Code and design by: `} &nbsp;
+          <a
+            href={author.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            title={author.position}
+          >
+            {author.name}
+          </a>
+        </Row>
       </section>
     </footer>
   )

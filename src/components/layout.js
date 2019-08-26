@@ -29,11 +29,19 @@ const Layout = ({ children }) => {
             instagram
             linkedin
           }
-          contact
+          contact {
+            mobile
+            telephone
+          }
           address
           opening {
             day
             hour
+          }
+          author {
+            name
+            website
+            position
           }
         }
       }

@@ -15,7 +15,7 @@ const Hero = ({ title, description }) => {
             <p className="hero-description">{description}</p>
             <section className="hero-buttons">
               <Button href="#services">Read More</Button>
-              <Link to="/projects">
+              <Link to="/#project">
                 <Button outline>Projects</Button>
               </Link>
             </section>

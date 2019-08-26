@@ -1,0 +1,19 @@
+.page-header {
+  background-image: url("../images/bg.jpg"); /*Wallpaper by desktopwalls.net*/
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  margin: 0px;
+  color: #fff;
+
+  h2 {
+    font-weight: bold;
+    font-size: 4.5em;
+    text-decoration: underline;
+  }
+
+  .page-header-wrapper {
+    background: rgba($color: #000, $alpha: 0.4);
+  }
+}

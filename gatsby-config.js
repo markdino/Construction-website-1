@@ -11,7 +11,10 @@ module.exports = {
       instagram: `https://instagram.com/tanpelconstruction`,
       linkedin: `https://linkedin.com/in/tanpelconstruction`,
     },
-    contact: `(+63) 912 345 6789`,
+    contact: {
+      mobile: `(+63) 912 345 6789`,
+      telephone: `(02) 123 4567`,
+    },
     address: `Bermuda Subd., Pamplona 3, Las Pinas City, Philippines, 1740`,
     opening: {
       day: `Monday - Friday`,
@@ -23,6 +26,7 @@ module.exports = {
       position: `Web Developer`,
       email: `markdinopelonia447@gmail.com`,
       contact: `(+63) 946 290 9678`,
+      website: `https://markdino.github.io/portfolio`,
     },
   },
   plugins: [
