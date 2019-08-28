@@ -160,3 +160,12 @@ footer {
     text-decoration-color: $warning !important;
   }
 }
+
+// -------- AboutCard --------
+.about-card {
+  border-color: $warning !important;
+
+  .about-card-title {
+    color: $warning !important;
+  }
+}
