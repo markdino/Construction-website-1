@@ -72,7 +72,7 @@ class Header extends Component {
                   <Link
                     className="nav-link"
                     activeClassName="nav-active"
-                    to="/about"
+                    to="/about/#about"
                   >
                     About Us
                   </Link>

@@ -20,7 +20,7 @@ $color-hover: #218838;
 // -------- Header component --------
 .header .navbar {
   .nav-active {
-    color: $color-light;
+    color: $color-light !important;
   }
 
   a:hover {
@@ -158,5 +158,14 @@ footer {
 .page-header {
   h2 {
     text-decoration-color: $success !important;
+  }
+}
+
+// -------- AboutCard --------
+.about-card {
+  border-color: $success !important;
+
+  .about-card-title {
+    color: $success !important;
   }
 }
