@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap"
 import { useStaticQuery, graphql } from "gatsby"
 import companyThumbnail from "../images/company.jpg"
 import PageHeader from "../components/pageHeader"
-
+import AboutCard from "../components/aboutCard"
 import "./about.scss"
 
 const AboutPage = () => {
@@ -44,6 +44,65 @@ const AboutPage = () => {
               <p>{para}</p>
             ))}
           </section>
+          <hr />
+          <Row>
+            <Col md="6">
+              <AboutCard title="Mission">
+                <p>
+                  <strong>{fullTitle} </strong>Ipsum dolor sit amet consectetur
+                  adipisicing elit. Ullam quisquam ratione et sint, quos
+                  dolores, corporis debitis minus, vitae officia adipisci ipsa
+                  fugiat est dolorum eum optio blanditiis quas doloribus hic
+                  saepe dicta fugit exercitationem. Sed, recusandae atque nobis
+                  facilis voluptates, dolores quaerat aspernatur dolorem iusto
+                  autem, facere ipsa. Fugiat
+                </p>
+                <ol>
+                  <li>Providing awesome customer service to our clients.</li>
+                  <li>
+                    Providing a mixture of services to a variety of industries
+                    and geographical locations.
+                  </li>
+                  <li>
+                    Continually improving communications with our customers and
+                    between departments.
+                  </li>
+                  <li>Providing training for personnel’s enhancement.</li>
+                  <li>
+                    Recruiting and hiring only those who share our vision.
+                  </li>
+                </ol>
+              </AboutCard>
+            </Col>
+            <Col md="6">
+              <AboutCard title="Vision">
+                <p>
+                  Ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  quisquam ratione et sint, quos dolores, corporis debitis
+                  minus, vitae officia adipisci ipsa fugiat est dolorum eum
+                  optio blanditiis quas doloribus hic saepe dicta fugit
+                  exercitationem. Sed, recusandae atque nobis facilis
+                  voluptates, <strong>{fullTitle} </strong>
+                  dolores quaerat aspernatur dolorem iusto autem, facere ipsa.
+                </p>
+              </AboutCard>
+              <AboutCard title="Core Values">
+                <p>
+                  Ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                  quisquam ratione et sint, quos dolores, corporis debitis
+                  minus, vitae officia adipisci ipsa fugiat est{" "}
+                  <strong>{title} </strong>dolorum eum optio blanditiis quas
+                  doloribus hic saepe dicta fugit exercitationem.
+                </p>
+                <ul>
+                  <li>Professionalism</li>
+                  <li>Commitment</li>
+                  <li>Integrity</li>
+                </ul>
+              </AboutCard>
+            </Col>
+          </Row>
+          <hr />
         </main>
       </Container>
     </section>
