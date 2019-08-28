@@ -20,7 +20,7 @@ $color-hover: #218838;
 // -------- Header component --------
 .header .navbar {
   .nav-active {
-    color: $color-light;
+    color: $color-light !important;
   }
 
   a:hover {
