@@ -43,3 +43,15 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.page-404 {
+  h1 {
+    font-size: 7rem;
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
