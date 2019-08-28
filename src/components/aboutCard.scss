@@ -1,0 +1,21 @@
+@import "../themes/bootstrap-color.scss";
+.about-card {
+  border-style: solid;
+  border-width: 4px;
+  border-color: $secondary;
+  padding: 20px;
+  margin: 40px 20px 20px;
+
+  .about-card-header {
+    margin: -40px 0px 20px;
+    width: 200px;
+    background: #fff;
+    color: $secondary;
+
+    .about-card-title {
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
