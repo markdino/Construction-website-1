@@ -40,7 +40,7 @@ class Header extends Component {
                   <Link
                     className="nav-link"
                     activeClassName="nav-active"
-                    to="/"
+                    to="/#hero"
                   >
                     Home
                   </Link>
