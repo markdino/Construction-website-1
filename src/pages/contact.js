@@ -136,7 +136,8 @@ const ContactPage = () => {
                     Telephone/Fax
                   </p>
                   <Row className="ml-0">
-                    <Telephone className="fill-svg" /> {contact.telephone}
+                    <Telephone className="fill-svg fill-color" />{" "}
+                    {contact.telephone}
                   </Row>
                 </section>
                 <section className="mobilephone border-bottom mb-4 pb-4">
@@ -144,19 +145,20 @@ const ContactPage = () => {
                     Mobile Phone
                   </p>
                   <Row className="ml-0">
-                    <Smartphone className="stroke-svg" /> {contact.mobile}
+                    <Smartphone className="stroke-svg stroke-color" />{" "}
+                    {contact.mobile}
                   </Row>
                 </section>
                 <section className="email border-bottom mb-4 pb-4">
                   <p className="text-uppercase font-weight-bold">E-mail</p>
                   <Row className="ml-0">
-                    <Mail className="stroke-svg" /> {email}
+                    <Mail className="stroke-svg stroke-color" /> {email}
                   </Row>
                 </section>
                 <section className="address mb-4 pb-4">
                   <p className="text-uppercase font-weight-bold">Address</p>
                   <Row className="ml-0 flex-nowrap">
-                    <Pin className="fill-svg" /> <p>{address}</p>
+                    <Pin className="fill-svg fill-color" /> <p>{address}</p>
                   </Row>
                 </section>
               </aside>
