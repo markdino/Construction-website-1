@@ -77,7 +77,7 @@ const ContactPage = () => {
                       name="text"
                       id="message"
                       placeholder="Your Message*"
-                      rows="5"
+                      rows="7"
                       required
                     />
                   </Col>
