@@ -84,7 +84,13 @@ const ContactPage = () => {
                 </Row>
               </Form>
             </Col>
-            <Col lg="4"></Col>
+            <Col lg="4">
+              <aside className="contact-info">
+                <section className="get-social">
+                  <h4 className="header4-title">Get Social</h4>
+                </section>
+              </aside>
+            </Col>
           </Row>
         </main>
       </Container>
