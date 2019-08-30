@@ -132,7 +132,9 @@ const ContactPage = () => {
                   </Row>
                 </section>
                 <section className="get-social border-bottom mb-4 pb-4">
-                  <p className="text-uppercase font-weight-bold">Phone</p>
+                  <p className="text-uppercase font-weight-bold">
+                    Telephone/Fax
+                  </p>
                   <Row className="ml-0">
                     <Telephone /> {contact.telephone}
                   </Row>
