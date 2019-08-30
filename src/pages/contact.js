@@ -3,6 +3,8 @@ import { Container, Row, Col, Form, Button, Input } from "reactstrap"
 import { useStaticQuery, graphql } from "gatsby"
 import PageHeader from "../components/pageHeader"
 
+import "./contact.scss"
+
 import Smartphone from "../assets/svg/smartphone.svg"
 import Telephone from "../assets/svg/phone.svg"
 import Mail from "../assets/svg/mail.svg"
@@ -94,7 +96,7 @@ const ContactPage = () => {
                 </Row>
               </Form>
             </Col>
-            <Col lg="4" className="pl-5 pr-5">
+            <Col lg="4" className="contact-info pl-5 pr-5">
               <aside className="contact-info">
                 <section className="get-social border-bottom mb-4 pb-4">
                   <p className="text-uppercase font-weight-bold">Get Social</p>
