@@ -14,5 +14,15 @@
       stroke: $secondary;
       fill: none;
     }
+
+    .address {
+      .fill-svg {
+        fill: $secondary;
+        stroke: #fff;
+        stroke-width: 2;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
   }
 }
