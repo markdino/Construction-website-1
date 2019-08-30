@@ -96,9 +96,9 @@ const ContactPage = () => {
             </Col>
             <Col lg="4" className="pl-5 pr-5">
               <aside className="contact-info">
-                <section className="get-social border-bottom">
+                <section className="get-social border-bottom mb-4 pb-4">
                   <p className="text-uppercase font-weight-bold">Get Social</p>
-                  <Row className="mb-4 ml-0">
+                  <Row className="ml-0">
                     <a
                       href={social.facebook}
                       target="_blank"
