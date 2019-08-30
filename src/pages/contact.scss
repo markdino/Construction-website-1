@@ -1,6 +1,10 @@
 @import "../themes/bootstrap-color.scss";
 .contact-page {
   .contact-form {
+    .contact-description {
+      font-size: 0.9rem;
+    }
+
     input,
     textarea {
       background-color: #f5f5f5;
