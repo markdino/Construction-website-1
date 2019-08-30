@@ -135,6 +135,12 @@ const ContactPage = () => {
                     <Telephone /> {contact.telephone}
                   </Row>
                 </section>
+                <section className="email border-bottom mb-4 pb-4">
+                  <p className="text-uppercase font-weight-bold">E-mail</p>
+                  <Row className="ml-0">
+                    <Mail /> {email}
+                  </Row>
+                </section>
               </aside>
             </Col>
           </Row>
