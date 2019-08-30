@@ -81,7 +81,7 @@ class Header extends Component {
                   <Link
                     className="nav-link"
                     activeClassName="nav-active"
-                    to="/contact"
+                    to="/contact/#contact"
                   >
                     Contact
                   </Link>

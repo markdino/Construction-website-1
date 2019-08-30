@@ -11,7 +11,7 @@ const QuoteUs = () => {
           <div className="parallax-content section-lg">
             <Container className="flex-sb">
               <h3>Looking for a high quality constructor for your project?</h3>
-              <Link to="/contact" className="center">
+              <Link to="/contact/#contact" className="center">
                 <Button>Quote to Us</Button>
               </Link>
             </Container>
