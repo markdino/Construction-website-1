@@ -106,28 +106,28 @@ const ContactPage = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FacebookSVG />
+                      <FacebookSVG className="fill-svg" />
                     </a>
                     <a
                       href={social.twitter}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <TwitterSVG />
+                      <TwitterSVG className="fill-svg" />
                     </a>
                     <a
                       href={social.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <InstagramSVG />
+                      <InstagramSVG className="stroke-svg" />
                     </a>
                     <a
                       href={social.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <LinkedinSVG />
+                      <LinkedinSVG className="stroke-svg" />
                     </a>
                   </Row>
                 </section>
@@ -136,7 +136,7 @@ const ContactPage = () => {
                     Telephone/Fax
                   </p>
                   <Row className="ml-0">
-                    <Telephone /> {contact.telephone}
+                    <Telephone className="fill-svg" /> {contact.telephone}
                   </Row>
                 </section>
                 <section className="mobilephone border-bottom mb-4 pb-4">
@@ -144,19 +144,19 @@ const ContactPage = () => {
                     Mobile Phone
                   </p>
                   <Row className="ml-0">
-                    <Smartphone /> {contact.mobile}
+                    <Smartphone className="stroke-svg" /> {contact.mobile}
                   </Row>
                 </section>
                 <section className="email border-bottom mb-4 pb-4">
                   <p className="text-uppercase font-weight-bold">E-mail</p>
                   <Row className="ml-0">
-                    <Mail /> {email}
+                    <Mail className="stroke-svg" /> {email}
                   </Row>
                 </section>
                 <section className="address mb-4 pb-4">
                   <p className="text-uppercase font-weight-bold">Address</p>
                   <Row className="ml-0 flex-nowrap">
-                    <Pin /> <p>{address}</p>
+                    <Pin className="fill-svg" /> <p>{address}</p>
                   </Row>
                 </section>
               </aside>
