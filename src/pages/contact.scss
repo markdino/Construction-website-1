@@ -1,5 +1,19 @@
 @import "../themes/bootstrap-color.scss";
 .contact-page {
+  .contact-form {
+    input,
+    textarea {
+      background-color: #f5f5f5;
+    }
+
+    input,
+    textarea,
+    .btn-block {
+      border-radius: 0px !important;
+      border: none !important;
+    }
+  }
+
   .contact-info {
     svg {
       margin-right: 1rem;

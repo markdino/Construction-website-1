@@ -46,7 +46,7 @@ const ContactPage = () => {
       <Container>
         <main className="contact-page section-lg">
           <Row>
-            <Col lg="8" className="border-right pl-5 pr-5">
+            <Col lg="8" className="contact-form border-right pl-5 pr-5">
               <h2 className="header-title center">Get in Touch</h2>
               <p className="contact-description center text-gray mb-4 small">
                 We are available by fax, e-mail or by phone. You can also use
