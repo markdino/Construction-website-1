@@ -34,7 +34,7 @@ const ContactPage = () => {
       <Container>
         <main className="contact-page section-lg">
           <Row>
-            <Col lg="8">
+            <Col lg="8" className="border-right pl-5 pr-5">
               <h2 className="header-title center">Get in Touch</h2>
               <p className="contact-description center text-gray mb-4 small">
                 We are available by fax, e-mail or by phone. You can also use
@@ -84,10 +84,10 @@ const ContactPage = () => {
                 </Row>
               </Form>
             </Col>
-            <Col lg="4">
+            <Col lg="4" className="pl-5 pr-5">
               <aside className="contact-info">
                 <section className="get-social">
-                  <h4 className="header4-title">Get Social</h4>
+                  <p className="text-uppercase font-weight-bold">Get Social</p>
                 </section>
               </aside>
             </Col>
