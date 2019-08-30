@@ -141,6 +141,12 @@ const ContactPage = () => {
                     <Mail /> {email}
                   </Row>
                 </section>
+                <section className="address mb-4 pb-4">
+                  <p className="text-uppercase font-weight-bold">Address</p>
+                  <Row className="ml-0 flex-nowrap">
+                    <Pin /> <p>{address}</p>
+                  </Row>
+                </section>
               </aside>
             </Col>
           </Row>
