@@ -1,5 +1,10 @@
 @import "../themes/bootstrap-color.scss";
 .contact-page {
+  @media screen and (max-width: 990px) {
+    .border-right {
+      border-right: none !important;
+    }
+  }
   .contact-form {
     .contact-description {
       font-size: 0.9rem;
