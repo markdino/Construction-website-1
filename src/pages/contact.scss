@@ -1,0 +1,55 @@
+@import "../themes/bootstrap-color.scss";
+.contact-page {
+  @media screen and (max-width: 990px) {
+    .border-right {
+      border-right: none !important;
+    }
+  }
+  .contact-form {
+    .contact-description {
+      font-size: 0.9rem;
+    }
+
+    input,
+    textarea {
+      background-color: #f5f5f5;
+    }
+
+    input,
+    textarea,
+    .btn-block {
+      border-radius: 0px !important;
+      border: none !important;
+    }
+
+    .btn-block:hover {
+      color: #fff !important;
+    }
+  }
+
+  .contact-info {
+    svg {
+      margin-right: 1rem;
+    }
+
+    .fill-svg {
+      fill: $secondary;
+      stroke: none;
+    }
+
+    .stroke-svg {
+      stroke: $secondary;
+      fill: none;
+    }
+
+    .address {
+      .fill-svg {
+        fill: $secondary;
+        stroke: #fff;
+        stroke-width: 2;
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}

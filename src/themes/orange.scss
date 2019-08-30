@@ -169,3 +169,23 @@ footer {
     color: $warning !important;
   }
 }
+
+// -------- ContactPage --------
+.contact-info {
+  .fill-color {
+    fill: $color-hover !important;
+  }
+  .stroke-color {
+    stroke: $color-hover !important;
+  }
+
+  a:hover {
+    .fill-svg {
+      fill: $color-hover !important;
+    }
+
+    .stroke-svg {
+      stroke: $color-hover !important;
+    }
+  }
+}

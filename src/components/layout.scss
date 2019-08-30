@@ -15,6 +15,10 @@
   margin-bottom: 40px;
 }
 
+.header4-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 .section-xl {
   padding: 150px 0px 100px;
 }
@@ -54,4 +58,12 @@
     text-transform: uppercase;
     font-weight: bold;
   }
+}
+
+.text-gray {
+  color: #7b7d7d;
+}
+
+.text-light {
+  color: #9b9b9b;
 }
