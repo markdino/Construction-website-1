@@ -36,6 +36,14 @@ const ContactPage = () => {
           <h2 className="header-title center">Get in Touch</h2>
         </main>
       </Container>
+      <iframe
+        src={map}
+        width="100%"
+        height="450"
+        frameborder="0"
+        allowfullscreen=""
+        title={`${title} office map`}
+      ></iframe>
     </section>
   )
 }
