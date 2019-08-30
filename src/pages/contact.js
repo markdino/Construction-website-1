@@ -33,12 +33,17 @@ const ContactPage = () => {
       <PageHeader title="Contact" />
       <Container>
         <main className="contact-page section-lg">
-          <h2 className="header-title center">Get in Touch</h2>
-          <p className="contact-description center text-gray">
-            We are available by fax, e-mail or by phone. You can also use our
-            quick contact form to ask a question about our services and projects
-            we’re working on.
-          </p>
+          <Row>
+            <Col lg="8">
+              <h2 className="header-title center">Get in Touch</h2>
+              <p className="contact-description center text-gray">
+                We are available by fax, e-mail or by phone. You can also use
+                our quick contact form to ask a question about our services and
+                projects we’re working on.
+              </p>
+            </Col>
+            <Col lg="4"></Col>
+          </Row>
         </main>
       </Container>
       <iframe
