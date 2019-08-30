@@ -179,12 +179,12 @@ footer {
     stroke: $color-hover !important;
   }
 
-  a {
-    .fill-svg:hover {
+  a:hover {
+    .fill-svg {
       fill: $color-hover !important;
     }
 
-    .stroke-svg:hover {
+    .stroke-svg {
       stroke: $color-hover !important;
     }
   }
