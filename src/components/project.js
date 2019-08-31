@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import { Container, Badge, Row, Col } from "reactstrap"
+import { Container, Badge, Row, Col, Button } from "reactstrap"
+import { Link } from "gatsby"
 import "./project.scss"
 
 import ProjCard from "./projCard"
@@ -89,13 +90,13 @@ class Project extends Component {
     return (
       <div className="project section-lg" id="project">
         <Container>
-          <h2 className="header-title center">Our Project</h2>
+          <h2 className="header-title center">Latest Project</h2>
           <section className="gallery-cat center">
             {projCategories.map((projCategory, index) => {
               return (
                 <Badge
                   key={index}
-                  color={projCategory === category ? "warning" : "light"}
+                  color={projCategory === category ? "secondary" : "light"}
                   onClick={() => this.setState({ category: projCategory })}
                 >
                   {projCategory}
@@ -123,6 +124,14 @@ class Project extends Component {
                       )
                     })}
             </Row>
+          </section>
+          <section className="center mt-5 font-size-s2">
+            <p className="">Explore more about our Projects</p>
+            <Link to="/projects/#project">
+              <Button outline color="dark">
+                All Projects
+              </Button>
+            </Link>
           </section>
         </Container>
       </div>
