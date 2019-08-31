@@ -89,7 +89,7 @@ class Project extends Component {
     return (
       <div className="project section-lg" id="project">
         <Container>
-          <h2 className="header-title center">Our Project</h2>
+          <h2 className="header-title center">Latest Project</h2>
           <section className="gallery-cat center">
             {projCategories.map((projCategory, index) => {
               return (
