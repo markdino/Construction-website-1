@@ -110,6 +110,10 @@ $color-hover: #d39e00;
   .badge-light:hover {
     background-color: $warning;
   }
+  .badge-secondary {
+    background-color: $warning;
+    color: #000;
+  }
 }
 
 // -------- News --------

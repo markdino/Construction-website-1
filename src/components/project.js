@@ -96,7 +96,7 @@ class Project extends Component {
               return (
                 <Badge
                   key={index}
-                  color={projCategory === category ? "warning" : "light"}
+                  color={projCategory === category ? "secondary" : "light"}
                   onClick={() => this.setState({ category: projCategory })}
                 >
                   {projCategory}
