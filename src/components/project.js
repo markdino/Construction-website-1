@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import { Container, Badge, Row, Col } from "reactstrap"
+import { Container, Badge, Row, Col, Button } from "reactstrap"
+import { Link } from "gatsby"
 import "./project.scss"
 
 import ProjCard from "./projCard"
@@ -123,6 +124,14 @@ class Project extends Component {
                       )
                     })}
             </Row>
+          </section>
+          <section className="center mt-5 font-size-s2">
+            <p className="">Explore more about our Projects</p>
+            <Link to="/projects/#project">
+              <Button outline color="dark">
+                All Projects
+              </Button>
+            </Link>
           </section>
         </Container>
       </div>
