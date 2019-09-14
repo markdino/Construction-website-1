@@ -9,8 +9,11 @@ import img5 from "../images/projects/jason-briscoe-AQl-J19ocWE-unsplash.jpg"
 import img6 from "../images/projects/lance-anderson-QdAAasrZhdk-unsplash.jpg"
 
 class PhotoViewer extends Component {
-  state = {}
+  state = {
+    imgIndex: 0,
+  }
   render() {
+    const imgList = [img1, img2, img3, img4, img5, img6]
     return (
       <main className="photo-viewer w-100 mr-1 ml-1">
         <section className="img-view img-thumbnail mw-100 h-75">
