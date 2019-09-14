@@ -21,7 +21,14 @@ class PhotoViewer extends Component {
         </section>
         <section className="img-list w-100 d-flex flex-wrap bg-light p-2">
           {imgList.map((img, index) => {
-            return <img src={img} alt="" key={index} />
+            return (
+              <img
+                src={img}
+                alt=""
+                key={index}
+                onClick={() => this.setState({ imgIndex: index })}
+              />
+            )
           })}
         </section>
       </main>
