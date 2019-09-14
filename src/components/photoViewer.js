@@ -17,12 +17,12 @@ class PhotoViewer extends Component {
           <img src={img5} alt="" />
         </section>
         <section className="img-list w-100 d-flex flex-wrap bg-light p-2">
-          <img src={img1} alt="" width="105" height="70" />
-          <img src={img2} alt="" width="105" height="70" />
-          <img src={img3} alt="" width="105" height="70" />
-          <img src={img4} alt="" width="105" height="70" />
-          <img src={img5} alt="" width="105" height="70" />
-          <img src={img6} alt="" width="105" height="70" />
+          <img src={img1} alt="" />
+          <img src={img2} alt="" />
+          <img src={img3} alt="" />
+          <img src={img4} alt="" />
+          <img src={img5} alt="" />
+          <img src={img6} alt="" />
         </section>
       </main>
     )
