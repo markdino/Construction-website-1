@@ -20,12 +20,9 @@ class PhotoViewer extends Component {
           <img src={img5} alt="" />
         </section>
         <section className="img-list w-100 d-flex flex-wrap bg-light p-2">
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />
-          <img src={img3} alt="" />
-          <img src={img4} alt="" />
-          <img src={img5} alt="" />
-          <img src={img6} alt="" />
+          {imgList.map((img, index) => {
+            return <img src={img} alt="" key={index} />
+          })}
         </section>
       </main>
     )
