@@ -27,6 +27,9 @@ class PhotoViewer extends Component {
                 alt=""
                 key={index}
                 onClick={() => this.setState({ imgIndex: index })}
+                className={
+                  this.state.imgIndex === index ? "img-selected" : null
+                }
               />
             )
           })}
