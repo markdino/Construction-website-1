@@ -1,0 +1,9 @@
+.photo-viewer {
+  .img-view {
+    img {
+      max-height: 75vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

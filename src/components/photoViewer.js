@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import "./photoViewer.scss"
 
 import img1 from "../images/projects/ialicante-mediterranean-homes-2d4lAQAlbDA-unsplash.jpg"
 import img2 from "../images/projects/jarek-ceborski-jn7uVeCdf6U-unsplash.jpg"
@@ -12,8 +13,8 @@ class PhotoViewer extends Component {
   render() {
     return (
       <main className="photo-viewer w-100 mr-1 ml-1">
-        <section className="img-view w-100">
-          <img src={img5} alt="" className="img-thumbnail" />
+        <section className="img-view img-thumbnail mw-100 h-75">
+          <img src={img5} alt="" />
         </section>
         <section className="img-list w-100 d-flex flex-wrap bg-light p-2">
           <img className="m-2 p2" src={img1} alt="" width="105" height="70" />
