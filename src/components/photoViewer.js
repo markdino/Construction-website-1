@@ -22,7 +22,7 @@ class PhotoViewer extends Component {
             alt={`imageview` + this.state.imgIndex}
           />
         </section>
-        <section className="img-list w-100 d-flex flex-wrap bg-light p-2">
+        <section className="img-list w-100 d-flex flex-wrap justify-content-around bg-light p-2">
           {imgList.map((img, index) => {
             return (
               <img
