@@ -193,3 +193,13 @@ footer {
     }
   }
 }
+
+// -------- PhotoViewer --------
+.photo-viewer {
+  img:hover {
+    background-color: $color-light !important;
+  }
+  .img-selected {
+    background-color: $warning !important;
+  }
+}
