@@ -1,6 +1,14 @@
 import React, { Component } from "react"
 import { Row, Col, Container } from "reactstrap"
 import PhotoViewer from "../components/photoViewer"
+import List1 from "../components/list1"
+
+import User from "../assets/svg/solid/user.svg"
+import Pin from "../assets/svg/solid/map-marker-alt.svg"
+import Calendar from "../assets/svg/solid/calendar-alt.svg"
+import Bill from "../assets/svg/solid/money-bill-wave.svg"
+import Building from "../assets/svg/solid/building.svg"
+import Hardhat from "../assets/svg/solid/hard-hat.svg"
 
 import img1 from "../images/projects/ialicante-mediterranean-homes-2d4lAQAlbDA-unsplash.jpg"
 import img2 from "../images/projects/jarek-ceborski-jn7uVeCdf6U-unsplash.jpg"
@@ -28,6 +36,39 @@ class SingeProject extends Component {
                 maiores aspernatur ipsam! Numquam deleniti recusandae optio
                 fugiat qui.
               </p>
+              <section className="details mt-5 mb-5">
+                <List1
+                  svg={<User />}
+                  title="Owner"
+                  value="Ms. Marissa Pelonia"
+                />
+                <hr />
+                <List1
+                  svg={<Pin />}
+                  title="Location"
+                  value="Block2, Lot1, Sierra Madre Street, Bermuda Subdivision, Las Pinas City, Philippines"
+                />
+                <hr />
+                <List1
+                  svg={<Building />}
+                  title="Scope of Works"
+                  value="Construction"
+                />
+                <hr />
+                <List1
+                  svg={<Hardhat />}
+                  title="Project Engineer"
+                  value="Engr. Zaldy Omar Pelonia"
+                />
+                <hr />
+                <List1 svg={<Bill />} title="Amount" value="Php 4,580,240.23" />
+                <hr />
+                <List1
+                  svg={<Calendar />}
+                  title="Duration Date"
+                  value="Feb. 24, 2018 - March 05, 2019"
+                />
+              </section>
             </Col>
             <Col lg="7" className="proj-photos">
               <PhotoViewer list={imgList} />
