@@ -4,8 +4,8 @@ import "./list1.scss"
 const List1 = ({ svg, title, value }) => {
   return (
     <section className="list1 d-flex flex-nowrap align-content-center">
-      <div className="svg">{svg}</div>
-      <p className="list-title mr-1">{`${title} :`} </p>
+      <div className="svg mr-3">{svg}</div>
+      <p className="list-title mr-3">{`${title} :`} </p>
       <p className="list-value text-muted"> {value}</p>
     </section>
   )
