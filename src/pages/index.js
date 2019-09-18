@@ -1,5 +1,5 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 // import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 
@@ -15,19 +15,7 @@ import QuoteUs from "../components/quote"
 import Project from "../components/project"
 import News from "../components/news"
 
-const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query SiteMetadataQuery {
-      site {
-        siteMetadata {
-          fullTitle
-          description
-          about
-        }
-      }
-    }
-  `)
-
+const IndexPage = ({ data }) => {
   const { fullTitle, description, about } = data.site.siteMetadata
 
   return (
@@ -35,11 +23,45 @@ const IndexPage = () => {
       <Hero title={fullTitle} description={description} />
       <Services />
       <About about={about} />
-      <Project />
+      <Project
+        title="Featured Projects"
+        projects={data.allProjectsJson.edges}
+      />
       <QuoteUs />
       <News />
     </div>
   )
 }
+
+export const projectsQuery = graphql`
+  query AllProjectsQuery {
+    allProjectsJson {
+      edges {
+        node {
+          title
+          category
+          description
+          img {
+            src
+            orig
+            author
+          }
+          engineer
+          amount
+          duration
+          owner
+          address
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        fullTitle
+        description
+        about
+      }
+    }
+  }
+`
 
 export default IndexPage
