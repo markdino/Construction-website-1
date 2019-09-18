@@ -38,7 +38,9 @@ const SingeProject = ({ location }) => {
               <List1
                 svg={<Building />}
                 title="Scope of Works"
-                value={category.map(cat => cat)}
+                value={category.map((cat, index, category) =>
+                  index === category.length - 1 ? cat : cat + ", "
+                )}
               />
               <hr />
               <List1
