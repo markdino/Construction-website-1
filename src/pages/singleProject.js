@@ -49,7 +49,7 @@ const SingeProject = ({ location }) => {
                 value={engineer}
               />
               <hr />
-              <List1 svg={<Bill />} title="Amount" value={amount} />
+              <List1 svg={<Bill />} title="Total Cost" value={amount} />
               <hr />
               <List1
                 svg={<Calendar />}
