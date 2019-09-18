@@ -24,7 +24,7 @@ const SingeProject = ({ location }) => {
   } = location.state.project
 
   return (
-    <main className="singe-project section-lg">
+    <main className="singe-project section-lg" id="single-project">
       <Container>
         <Row>
           <Col lg="5" className="proj-details">

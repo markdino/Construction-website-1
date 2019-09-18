@@ -5,7 +5,7 @@ const ProjCard = ({ proj }) => {
   const { img, title, description } = proj
   return (
     <div className="proj-card">
-      <Link to="singleProject" state={{ project: proj }}>
+      <Link to="singleProject/#single-project" state={{ project: proj }}>
         <img src={img.src} alt={img.orig} title={img.author} />
         <section className="wrap-dark">
           <main className="proj-content center">
