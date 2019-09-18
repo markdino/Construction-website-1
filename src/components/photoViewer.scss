@@ -1,0 +1,23 @@
+.photo-viewer {
+  .img-view {
+    img {
+      max-height: 60vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .img-list {
+    img {
+      margin: 0.5rem;
+      padding: 0.3rem;
+      width: 105px;
+      height: 70px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+    .img-selected {
+      background-color: #cbd3da;
+    }
+  }
+}

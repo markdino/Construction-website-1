@@ -1,0 +1,18 @@
+.list1 {
+  font-size: 1.2rem;
+  * {
+    margin: 0px;
+  }
+  .svg {
+    width: 18px;
+    min-width: 18px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .list-title {
+    white-space: nowrap;
+  }
+}
