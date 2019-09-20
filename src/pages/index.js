@@ -34,7 +34,7 @@ const IndexPage = ({ data }) => {
 }
 
 export const projectsQuery = graphql`
-  query AllProjectsQuery {
+  query FeaturedProjectsQuery {
     allProjectsJson {
       edges {
         node {
