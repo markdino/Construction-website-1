@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 
+import "./projCard.scss"
+
 const ProjCard = ({ proj }) => {
   const { img, title, description } = proj
   return (
