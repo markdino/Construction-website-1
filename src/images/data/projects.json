@@ -2,12 +2,15 @@
   {
     "title": "Ialicante Mediterranean Homes",
     "category": ["construction"],
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
+    "description": "iAlicante provides a brand new line of modern Villas and Apartments and beautiful second-hand properties on the SUNNY Mediterranean coast of Costa Blanca, in Spain '' the White Coast'', which is one of the top holiday destinations.",
     "img": {
       "src": [
         "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1502005097973-6a7082348e28?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+        "https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "https://images.unsplash.com/photo-1512914890251-2f96a9b0bbe2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80",
+        "https://images.unsplash.com/photo-1512918428767-68579e250c06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
+        "https://images.unsplash.com/photo-1512916958891-fcf61b2160df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80",
+        "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
       ],
       "orig": "https://unsplash.com/photos/2d4lAQAlbDA",
       "author": "Photo by iAlicante Mediterranean Homes on Unsplash"
@@ -15,8 +18,9 @@
     "engineer": "Engr. Zaldy Omar",
     "amount": "Php 4,000,000.00",
     "duration": "Jan. 12, 2018 - Apr. 20, 2019",
-    "owner": "Ms. Marissa Pelonia",
-    "address": "Manila, Philippines"
+    "owner": "ialicante.com",
+    "address": "Alicante, Costa Blanca, Spain",
+    "featured": true
   },
   {
     "title": "Jarek Ceborski",
@@ -24,9 +28,7 @@
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
       "src": [
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1502005097973-6a7082348e28?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
       ],
       "orig": "https://unsplash.com/photos/jn7uVeCdf6U",
       "author": "Photo by Jarek Ceborski on Unsplash"
@@ -34,8 +36,8 @@
     "engineer": "Engr. Zaldy Omar",
     "amount": "Php 4,000,000.00",
     "duration": "Jan. 12, 2018 - Apr. 20, 2019",
-    "owner": "Ms. Marissa Pelonia",
-    "address": "Manila, Philippines"
+    "owner": "Jarek Ceborski",
+    "address": "Wrocław, Poland"
   },
   {
     "title": "Pixasquare",
@@ -43,9 +45,7 @@
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
       "src": [
-        "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
       ],
       "orig": "https://unsplash.com/photos/4ojhpgKpS68",
       "author": "Photo by Pixasquare on Unsplash"
@@ -53,7 +53,7 @@
     "engineer": "Engr. Zaldy Omar",
     "amount": "Php 4,000,000.00",
     "duration": "Jan. 12, 2018 - Apr. 20, 2019",
-    "owner": "Ms. Marissa Pelonia",
+    "owner": "pixasquare.com",
     "address": "Manila, Philippines"
   },
   {
@@ -62,28 +62,26 @@
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
       "src": [
-        "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        "https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&auto=format&fit=crop&w=1047&q=80"
       ],
       "orig": "https://unsplash.com/photos/B0aCvAVSX8E",
-      "author": "Photo by Étienne Beauregard-Riverin on Unsplash"
+      "author": "unsplash.com/@sphericity"
     },
     "engineer": "Engr. Zaldy Omar",
     "amount": "Php 4,000,000.00",
     "duration": "Jan. 12, 2018 - Apr. 20, 2019",
-    "owner": "Ms. Marissa Pelonia",
+    "owner": "Sphericity",
     "address": "Manila, Philippines"
   },
   {
     "title": "Jason Briscoe",
     "category": ["remodeling", "interior design"],
-    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
+    "description": "Giving brands the energy to change. I use design to help clients find the vision and courage to take on the world.",
     "img": {
       "src": [
         "https://images.unsplash.com/photo-1502005097973-6a7082348e28?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        "https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
       ],
       "orig": "https://unsplash.com/photos/AQl-J19ocWE",
       "author": "Photo by Jason Briscoe on Unsplash"
@@ -91,18 +89,20 @@
     "engineer": "Engr. Zaldy Omar",
     "amount": "Php 4,000,000.00",
     "duration": "Jan. 12, 2018 - Apr. 20, 2019",
-    "owner": "Ms. Marissa Pelonia",
-    "address": "Manila, Philippines"
+    "owner": "Jason Briscoe",
+    "address": "Toronto",
+    "featured": true
   },
   {
-    "title": "Lance Anderson",
+    "title": "The Rock and Roll Hall of Fame and Museum",
     "category": ["construction", "interior design"],
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
       "src": [
         "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        "https://images.unsplash.com/photo-1487603527224-a650979f288e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "https://images.unsplash.com/photo-1487603097198-fe76cd44579d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+        "https://images.unsplash.com/photo-1487603348225-f4bb6ceba144?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
       ],
       "orig": "https://unsplash.com/photos/QdAAasrZhdk",
       "author": "Photo by Lance Anderson on Unsplash"
@@ -110,7 +110,8 @@
     "engineer": "Engr. Zaldy Omar",
     "amount": "Php 4,000,000.00",
     "duration": "Jan. 12, 2018 - Apr. 20, 2019",
-    "owner": "Ms. Marissa Pelonia",
-    "address": "Manila, Philippines"
+    "owner": "Lance Anderson",
+    "address": "Cleveland, United States",
+    "featured": true
   }
 ]
