@@ -194,6 +194,15 @@ footer {
   }
 }
 
+// -------- List1 --------
+.list1 {
+  .svg {
+    svg {
+      fill: $color-hover !important;
+    }
+  }
+}
+
 // -------- PhotoViewer --------
 .photo-viewer {
   img:hover {
