@@ -1,6 +1,7 @@
 [
   {
     "title": "Ialicante Mediterranean Homes",
+    "slug": "ialicante",
     "category": ["construction"],
     "description": "iAlicante provides a brand new line of modern Villas and Apartments and beautiful second-hand properties on the SUNNY Mediterranean coast of Costa Blanca, in Spain '' the White Coast'', which is one of the top holiday destinations.",
     "img": {
@@ -24,6 +25,7 @@
   },
   {
     "title": "Jarek Ceborski",
+    "slug": "jarek-ceborski",
     "category": ["interior design"],
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
@@ -41,6 +43,7 @@
   },
   {
     "title": "Pixasquare",
+    "slug": "pixasquare",
     "category": ["construction"],
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
@@ -58,6 +61,7 @@
   },
   {
     "title": "Étienne Beauregard-Riverin",
+    "slug": "sphericity",
     "category": ["construction"],
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
@@ -75,6 +79,7 @@
   },
   {
     "title": "Jason Briscoe",
+    "slug": "jason-briscoe",
     "category": ["remodeling", "interior design"],
     "description": "Giving brands the energy to change. I use design to help clients find the vision and courage to take on the world.",
     "img": {
@@ -95,6 +100,7 @@
   },
   {
     "title": "The Rock and Roll Hall of Fame and Museum",
+    "slug": "lance-anderson",
     "category": ["construction", "interior design"],
     "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo amet dicta eaque facere doloribus, earum error! Laudantium beatae harum quos?",
     "img": {
