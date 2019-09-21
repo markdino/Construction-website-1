@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import { Row, Col, Container } from "reactstrap"
 import PhotoViewer from "../components/photoViewer"
 import List1 from "../components/list1"
@@ -10,7 +11,27 @@ import Bill from "../assets/svg/solid/money-bill-wave.svg"
 import CalendarCheck from "../assets/svg/solid/calendar-check.svg"
 import Hardhat from "../assets/svg/solid/hard-hat.svg"
 
-const SingeProject = ({ location }) => {
+const query = graphql`
+  query($slug: String!) {
+    projectsJson(slug: { eq: $slug }) {
+      title
+      category
+      description
+      img {
+        src
+        orig
+        author
+      }
+      completionDate
+      amount
+      duration
+      owner
+      address
+    }
+  }
+`
+
+const SingeProject = ({ props }) => {
   const {
     title,
     category,
@@ -21,7 +42,7 @@ const SingeProject = ({ location }) => {
     duration,
     owner,
     address,
-  } = location.state.project
+  } = props.data.projectsJson
 
   return (
     <main className="singe-project section-lg" id="single-project">
