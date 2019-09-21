@@ -21,6 +21,7 @@ export const projectsQuery = graphql`
       edges {
         node {
           title
+          slug
           category
           description
           img {
@@ -28,11 +29,6 @@ export const projectsQuery = graphql`
             orig
             author
           }
-          completionDate
-          amount
-          duration
-          owner
-          address
         }
       }
     }
