@@ -46,7 +46,7 @@ export const projectsQuery = graphql`
             orig
             author
           }
-          engineer
+          completionDate
           amount
           duration
           owner
