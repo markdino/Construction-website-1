@@ -11,7 +11,7 @@ import Bill from "../assets/svg/solid/money-bill-wave.svg"
 import CalendarCheck from "../assets/svg/solid/calendar-check.svg"
 import Hardhat from "../assets/svg/solid/hard-hat.svg"
 
-const query = graphql`
+export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
@@ -31,7 +31,7 @@ const query = graphql`
   }
 `
 
-const SingeProject = ({ props }) => {
+const SingeProject = props => {
   const {
     title,
     category,
