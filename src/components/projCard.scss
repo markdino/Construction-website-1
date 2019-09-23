@@ -1,0 +1,56 @@
+.proj-card {
+    width: 100%;
+    height: 300px;
+    background-color: burlywood;
+    margin: 10px auto;
+    overflow: hidden;
+    position: relative;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    .wrap-dark {
+      background: rgba(#000, 0.2);
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  
+    .wrap-dark {
+      opacity: 0;
+      transition-duration: 0.4s;
+    }
+    .wrap-dark:hover {
+      opacity: 1;
+      transition-duration: 0.6s;
+    }
+  
+    .proj-content {
+      background: rgba(#000, 0.3);
+      border-style: solid;
+      border-width: 2px;
+      border-color: #fff;
+      padding: 20px;
+      height: 100%;
+      overflow: hidden;
+      color: #fff;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+  
+      h4 {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+  
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
