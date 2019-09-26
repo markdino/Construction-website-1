@@ -56,15 +56,10 @@ const ContactPage = () => {
               <form
                 name="contact"
                 method="POST"
-                data-netlify-recaptcha="true"
+                data-netlify-honeypot="bot-field"
                 data-netlify="true"
               >
-                <input
-                  className="form-control"
-                  type="hidden"
-                  name="form-name"
-                  value="contact"
-                />
+                <input type="hidden" name="form-name" value="contact" />
                 <Row>
                   <Col className="mb-4" md="6">
                     <input
