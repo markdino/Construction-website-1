@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import { Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 // ---------- Themes colors ----------
@@ -39,6 +38,7 @@ export const projectsQuery = graphql`
       edges {
         node {
           title
+          slug
           category
           description
           img {
