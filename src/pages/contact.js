@@ -85,7 +85,7 @@ const ContactPage = () => {
                     />
                   </Col>
                   <Col className="mb-4" md="12">
-                    <input
+                    <textarea
                       className="form-control"
                       type="textarea"
                       name="message"
@@ -93,7 +93,7 @@ const ContactPage = () => {
                       placeholder="Your Message*"
                       rows="7"
                       required
-                    />
+                    ></textarea>
                   </Col>
                   <Col className="mb-4" md="6">
                     <input
