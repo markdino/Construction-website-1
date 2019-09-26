@@ -55,7 +55,7 @@ const ContactPage = () => {
               </p>
               <Form
                 name="contact"
-                method="POST"
+                action="POST"
                 data-netlify-recaptcha="true"
                 data-netlify="true"
               >
