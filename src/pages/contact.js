@@ -53,16 +53,17 @@ const ContactPage = () => {
                 our quick contact form to ask a question about our services and
                 projects we’re working on.
               </p>
-              <Form
+              <form
                 name="contact"
                 method="POST"
-                data-netlify-recaptcha="true"
+                data-netlify-honeypot="bot-field"
                 data-netlify="true"
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <Row>
                   <Col className="mb-4" md="6">
-                    <Input
+                    <input
+                      className="form-control"
                       type="text"
                       name="name"
                       id="userName"
@@ -70,7 +71,8 @@ const ContactPage = () => {
                     />
                   </Col>
                   <Col className="mb-4" md="6">
-                    <Input
+                    <input
+                      className="form-control"
                       type="number"
                       name="phone"
                       id="userName"
@@ -78,23 +80,27 @@ const ContactPage = () => {
                     />
                   </Col>
                   <Col className="mb-4" md="12">
-                    <Input
+                    <textarea
+                      className="form-control"
                       type="textarea"
                       name="message"
                       id="message"
                       placeholder="Your Message*"
                       rows="7"
                       required
+                    ></textarea>
+                  </Col>
+                  <Col className="mb-4" md="12">
+                    <input
+                      className="form-control-file"
+                      type="file"
+                      name="file"
+                      id="attachedFile"
                     />
                   </Col>
                   <Col className="mb-4" md="6">
-                    <Input type="file" name="file" id="attachedFile" />
-                  </Col>
-                  <Col className="mb-4" md="6">
-                    <div data-netlify-recaptcha="true"></div>
-                  </Col>
-                  <Col className="mb-4" md="6">
-                    <Input
+                    <input
+                      className="form-control"
                       type="email"
                       name="email"
                       id="userEmail"
@@ -103,16 +109,15 @@ const ContactPage = () => {
                     />
                   </Col>
                   <Col className="mb-4" md="6">
-                    <Button
-                      block
-                      className="text-dark font-weight-bold text-uppercase"
+                    <button
+                      className="text-dark font-weight-bold text-uppercase btn btn-secondary btn-block"
                       type="submit"
                     >
                       Send Message
-                    </Button>
+                    </button>
                   </Col>
                 </Row>
-              </Form>
+              </form>
             </Col>
             <Col lg="4" className="contact-info pl-5 pr-5">
               <aside className="contact-info">
