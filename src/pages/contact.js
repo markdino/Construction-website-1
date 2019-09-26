@@ -90,16 +90,13 @@ const ContactPage = () => {
                       required
                     ></textarea>
                   </Col>
-                  <Col className="mb-4" md="6">
+                  <Col className="mb-4" md="12">
                     <input
                       className="form-control-file"
                       type="file"
                       name="file"
                       id="attachedFile"
                     />
-                  </Col>
-                  <Col className="mb-4" md="6">
-                    <div data-netlify-recaptcha="true"></div>
                   </Col>
                   <Col className="mb-4" md="6">
                     <input
