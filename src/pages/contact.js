@@ -59,6 +59,7 @@ const ContactPage = () => {
                 data-netlify-recaptcha="true"
                 data-netlify="true"
               >
+                <input type="hidden" name="form-name" value="contact" />
                 <Row>
                   <Col className="mb-4" md="6">
                     <Input
