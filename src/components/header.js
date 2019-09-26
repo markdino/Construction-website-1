@@ -30,7 +30,7 @@ class Header extends Component {
         <Navbar color="dark" dark expand="md" className="navbar fixed-top">
           <Container>
             <Link to="/#hero" className="navbar-brand">
-              <img src={logo} alt="RDC Logo" />
+              <img src={logo} alt={`${siteTitle} Logo`} />
               {siteTitle}
             </Link>
             <NavbarToggler onClick={this.toggle} />
