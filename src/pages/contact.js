@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, Form, Button, Input } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import { useStaticQuery, graphql } from "gatsby"
 import PageHeader from "../components/pageHeader"
 
