@@ -53,7 +53,12 @@ const ContactPage = () => {
                 our quick contact form to ask a question about our services and
                 projects we’re working on.
               </p>
-              <Form>
+              <Form
+                name="contact"
+                method="POST"
+                data-netlify-recaptcha="true"
+                data-netlify="true"
+              >
                 <Row>
                   <Col className="mb-4" md="6">
                     <Input
@@ -74,12 +79,18 @@ const ContactPage = () => {
                   <Col className="mb-4" md="12">
                     <Input
                       type="textarea"
-                      name="text"
+                      name="message"
                       id="message"
                       placeholder="Your Message*"
                       rows="7"
                       required
                     />
+                  </Col>
+                  <Col className="mb-4" md="6">
+                    <Input type="file" name="file" id="attachedFile" />
+                  </Col>
+                  <Col className="mb-4" md="6">
+                    <div data-netlify-recaptcha="true"></div>
                   </Col>
                   <Col className="mb-4" md="6">
                     <Input
@@ -94,6 +105,7 @@ const ContactPage = () => {
                     <Button
                       block
                       className="text-dark font-weight-bold text-uppercase"
+                      type="submit"
                     >
                       Send Message
                     </Button>
