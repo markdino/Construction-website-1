@@ -117,13 +117,12 @@ const ContactPage = () => {
                     />
                   </Col>
                   <Col className="mb-4" md="6">
-                    <Button
-                      block
-                      className="text-dark font-weight-bold text-uppercase"
+                    <button
+                      className="text-dark font-weight-bold text-uppercase btn btn-secondary btn-block"
                       type="submit"
                     >
                       Send Message
-                    </Button>
+                    </button>
                   </Col>
                 </Row>
               </form>
