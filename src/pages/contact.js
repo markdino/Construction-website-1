@@ -53,12 +53,7 @@ const ContactPage = () => {
                 our quick contact form to ask a question about our services and
                 projects we’re working on.
               </p>
-              <Form
-                name="contact"
-                action="POST"
-                data-netlify-recaptcha="true"
-                data-netlify="true"
-              >
+              <Form name="contact" action="POST" data-netlify="true">
                 <Row>
                   <Col className="mb-4" md="6">
                     <Input
