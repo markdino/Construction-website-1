@@ -79,7 +79,7 @@ const ContactPage = () => {
                       placeholder="Phone"
                     />
                   </Col>
-                  <Col className="mb-4" md="12">
+                  <Col className="mb-1" md="12">
                     <textarea
                       className="form-control"
                       type="textarea"
