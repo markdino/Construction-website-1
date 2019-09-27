@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, Form, Button, Input } from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import { useStaticQuery, graphql } from "gatsby"
 import PageHeader from "../components/pageHeader"
 
@@ -79,7 +79,7 @@ const ContactPage = () => {
                       placeholder="Phone"
                     />
                   </Col>
-                  <Col className="mb-4" md="12">
+                  <Col className="mb-1" md="12">
                     <textarea
                       className="form-control"
                       type="textarea"
