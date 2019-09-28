@@ -27,7 +27,9 @@ const CareersPage = () => {
             </Col>
             <Col md="6">
               <section className="careers-content">
-                <h2 className="header-title">Benefits and rewards</h2>
+                <h2 className="header-title text-center">
+                  Benefits and rewards
+                </h2>
                 <p className="careers-description">
                   Our diverse capabilities provide employees with the ability to
                   work on projects of all sizes and types and receive amazing
