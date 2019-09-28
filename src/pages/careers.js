@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, Button } from "reactstrap"
+import { Container, Row, Col, Button, Table } from "reactstrap"
 import { graphql, Link } from "gatsby"
 import "./careers.scss"
 import PageHeader from "../components/pageHeader"
@@ -60,6 +60,42 @@ const CareersPage = () => {
                 </Link>
               </section>
             </Col>
+          </Row>
+          <Row>
+            <section className="opened-positions mt-5 w-100">
+              <h3>Opened Positions</h3>
+              <Table>
+                <thead>
+                  <tr>
+                    <th>Job Posting Title</th>
+                    <th>Location</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Project Engineers</td>
+                    <td>Inconstant (Project site)</td>
+                    <td>Fulltime</td>
+                  </tr>
+                  <tr>
+                    <td>Estimator</td>
+                    <td>Inconstant (Project site/Office)</td>
+                    <td>Fulltime</td>
+                  </tr>
+                  <tr>
+                    <td>Bookkeeper</td>
+                    <td>Las Pinas City (Office)</td>
+                    <td>Fulltime</td>
+                  </tr>
+                  <tr>
+                    <td>Purchasing Staffs/Representatives</td>
+                    <td>Las Pinas City (Office)</td>
+                    <td>Fulltime</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </section>
           </Row>
         </main>
       </Container>
