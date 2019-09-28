@@ -7,7 +7,7 @@ import List2 from "../components/list2"
 
 import Check from "../assets/svg/solid/check.svg"
 
-import companyThumbnail from "../images/company.jpg"
+import teamThumbnail from "../images/team.jpg"
 
 const CareersPage = () => {
   return (
@@ -19,7 +19,7 @@ const CareersPage = () => {
             <Col md="6">
               <section className="careers-thumbnail">
                 <img
-                  src={companyThumbnail}
+                  src={teamThumbnail}
                   alt="Company Thumbnail"
                   className="img-thumbnail"
                 />
