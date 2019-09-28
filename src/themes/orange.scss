@@ -214,8 +214,14 @@ footer {
 }
 
 // -------- CareersPage --------
-.careers-content {
-  svg {
-    fill: $color-hover;
+.careers-page {
+  .careers-content {
+    svg {
+      fill: $color-hover;
+    }
+  }
+
+  .table tbody tr td:first-child {
+    color: $color-hover;
   }
 }
