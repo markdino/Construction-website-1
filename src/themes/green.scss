@@ -212,3 +212,10 @@ footer {
     background-color: $success !important;
   }
 }
+
+// -------- CareersPage --------
+.careers-content {
+  svg {
+    fill: $color-hover;
+  }
+}
