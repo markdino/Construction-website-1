@@ -1,22 +1,22 @@
 [
   {
     "positionTitle": "Project Engineers",
-    "Location": "Unconstant (Project site)",
-    "Time": "Fulltime"
+    "location": "Unconstant (Project site)",
+    "time": "Fulltime"
   },
   {
     "positionTitle": "Estimator",
-    "Location": "Unconstant (Project site/Office)",
-    "Time": "Fulltime"
+    "location": "Unconstant (Project site/Office)",
+    "time": "Fulltime"
   },
   {
     "positionTitle": "Bookkeeper",
-    "Location": "Las Pinas City (Office)",
-    "Time": "Fulltime"
+    "location": "Las Pinas City (Office)",
+    "time": "Fulltime"
   },
   {
     "positionTitle": "Purchasing Staffs/Representatives",
-    "Location": "Las Pinas City (Office)",
-    "Time": "Fulltime"
+    "location": "Las Pinas City (Office)",
+    "time": "Fulltime"
   }
 ]
