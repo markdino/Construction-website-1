@@ -47,8 +47,10 @@ const ContactPage = () => {
         <main className="contact-page section-lg">
           <Row>
             <Col lg="8" className="contact-form border-right pl-5 pr-5">
-              <h2 className="header-title center">Get in Touch</h2>
-              <p className="contact-description center text-gray mb-4">
+              <h2 className="header-title text-center font-weight-bold">
+                Get in Touch
+              </h2>
+              <p className="contact-description text-center text-gray mb-4">
                 We are available by fax, e-mail or by phone. You can also use
                 our quick contact form to ask a question about our services and
                 projects we’re working on.

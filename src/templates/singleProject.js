@@ -49,7 +49,9 @@ const SingeProject = props => {
       <Container>
         <Row>
           <Col lg="5" className="proj-details">
-            <h2 className="header-title center">{title}</h2>
+            <h2 className="header-title text-center text-capitalize">
+              {title}
+            </h2>
             <p className="description text-secondary">{description}</p>
             <section className="details mt-5 mb-5">
               <List1 svg={<User />} title="Owner" value={owner} />

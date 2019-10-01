@@ -31,7 +31,7 @@ const AboutPage = () => {
       <PageHeader title="About Us" />
       <Container>
         <main className="about-page section-lg">
-          <h2 className="header-title center">{title}</h2>
+          <h2 className="header-title text-center font-weight-bold">{title}</h2>
           <section className="about-content">
             <img
               src={companyThumbnail}

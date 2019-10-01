@@ -9,7 +9,9 @@ const Feature = ({ title, projects }) => {
   return (
     <div className="project section-lg" id="feature">
       <Container>
-        <h2 className="header-title center">{title}</h2>
+        <h2 className="header-title text-center font-weight-bold text-uppercase">
+          {title}
+        </h2>
 
         <section className="gallery">
           <Row>
@@ -24,7 +26,7 @@ const Feature = ({ title, projects }) => {
               })}
           </Row>
         </section>
-        <section className="center mt-5 font-size-s2">
+        <section className="text-center mt-5 font-size-s2">
           <p className="">Explore more about our Projects</p>
           <Link to="/projects/#project">
             <Button outline color="dark">

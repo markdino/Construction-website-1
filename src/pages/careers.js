@@ -31,7 +31,7 @@ const CareersPage = ({ data }) => {
             </Col>
             <Col md="6">
               <section className="careers-content">
-                <h2 className="header-title text-center">
+                <h2 className="header-title text-center font-weight-bold text-capitalize">
                   {careersInfo.title}
                 </h2>
                 <p className="careers-description">{careersInfo.about}</p>
