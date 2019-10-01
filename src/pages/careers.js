@@ -11,6 +11,7 @@ import teamThumbnail from "../images/team.jpg"
 
 const CareersPage = ({ data }) => {
   const opportunities = data.allCareersJson.edges
+  const careersInfo = data.site.siteMetadata.careers
   return (
     <section id="careers">
       <PageHeader title="Careers" />
@@ -29,32 +30,17 @@ const CareersPage = ({ data }) => {
             <Col md="6">
               <section className="careers-content">
                 <h2 className="header-title text-center">
-                  Benefits and rewards
+                  {careersInfo.title}
                 </h2>
-                <p className="careers-description">
-                  Our diverse capabilities provide employees with the ability to
-                  work on projects of all sizes and types and receive amazing
-                  benefits in return. They include but are in no way limited to:
-                </p>
+                <p className="careers-description">{careersInfo.about}</p>
                 <ul className="careers-list">
-                  <li>
-                    <List2
-                      svg={<Check />}
-                      value="Healthcare and wellness benefits"
-                    />
-                  </li>
-                  <li>
-                    <List2
-                      svg={<Check />}
-                      value="Retirement and financial protection"
-                    />
-                  </li>
-                  <li>
-                    <List2
-                      svg={<Check />}
-                      value="Employee development programs"
-                    />
-                  </li>
+                  {careersInfo.benefits.map(benefit => {
+                    return (
+                      <li>
+                        <List2 svg={<Check />} value={benefit} />
+                      </li>
+                    )
+                  })}
                 </ul>
                 <Link to="/contact/#contact" className="careers-btn-lnk">
                   <Button className="text-dark text-uppercase font-weight-bold">
@@ -103,6 +89,15 @@ export const careersQuery = graphql`
           positionTitle
           location
           time
+        }
+      }
+    }
+    site {
+      siteMetadata {
+        careers {
+          title
+          about
+          benefits
         }
       }
     }
