@@ -9,7 +9,8 @@ import Check from "../assets/svg/solid/check.svg"
 
 import teamThumbnail from "../images/team.jpg"
 
-const CareersPage = () => {
+const CareersPage = ({ data }) => {
+  const careersData = data.allCareersJson.edges
   return (
     <section id="careers">
       <PageHeader title="Careers" />
@@ -75,26 +76,15 @@ const CareersPage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Project Engineers</td>
-                    <td>Inconstant (Project site)</td>
-                    <td>Fulltime</td>
-                  </tr>
-                  <tr>
-                    <td>Estimator</td>
-                    <td>Inconstant (Project site/Office)</td>
-                    <td>Fulltime</td>
-                  </tr>
-                  <tr>
-                    <td>Bookkeeper</td>
-                    <td>Las Pinas City (Office)</td>
-                    <td>Fulltime</td>
-                  </tr>
-                  <tr>
-                    <td>Purchasing Staffs/Representatives</td>
-                    <td>Las Pinas City (Office)</td>
-                    <td>Fulltime</td>
-                  </tr>
+                  {careersData.map(career => {
+                    return (
+                      <tr>
+                        <td>{career.node.positionTitle}</td>
+                        <td>{career.node.location}</td>
+                        <td>{career.node.time}</td>
+                      </tr>
+                    )
+                  })}
                 </tbody>
               </Table>
             </section>
@@ -104,5 +94,19 @@ const CareersPage = () => {
     </section>
   )
 }
+
+export const careersQuery = graphql`
+  query AllCareersQuery {
+    allCareersJson {
+      edges {
+        node {
+          positionTitle
+          location
+          time
+        }
+      }
+    }
+  }
+`
 
 export default CareersPage
