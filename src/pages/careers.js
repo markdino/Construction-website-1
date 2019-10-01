@@ -10,7 +10,7 @@ import Check from "../assets/svg/solid/check.svg"
 import teamThumbnail from "../images/team.jpg"
 
 const CareersPage = ({ data }) => {
-  const careersData = data.allCareersJson.edges
+  const opportunities = data.allCareersJson.edges
   return (
     <section id="careers">
       <PageHeader title="Careers" />
@@ -76,7 +76,7 @@ const CareersPage = ({ data }) => {
                   </tr>
                 </thead>
                 <tbody>
-                  {careersData.map(career => {
+                  {opportunities.map(career => {
                     return (
                       <tr>
                         <td>{career.node.positionTitle}</td>
