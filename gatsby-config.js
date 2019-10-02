@@ -21,6 +21,17 @@ module.exports = {
       day: `Monday - Friday`,
       hour: `8:00am - 5:00pm`,
     },
+    careers: {
+      title: `Benefits and rewards`,
+      about: `Our diverse capabilities provide employees with the ability to
+      work on projects of all sizes and types and receive amazing
+      benefits in return. They include but are in no way limited to:`,
+      benefits: [
+        `Healthcare and wellness benefits`,
+        `Retirement and financial protection`,
+        `Employee development programs`,
+      ],
+    },
 
     author: {
       name: `Mark Dino Pelonia`,

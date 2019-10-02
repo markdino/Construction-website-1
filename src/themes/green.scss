@@ -212,3 +212,16 @@ footer {
     background-color: $success !important;
   }
 }
+
+// -------- CareersPage --------
+.careers-page {
+  .careers-content {
+    svg {
+      fill: $color-hover;
+    }
+  }
+
+  .table tbody tr td:first-child {
+    color: $color-hover;
+  }
+}
