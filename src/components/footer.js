@@ -54,7 +54,7 @@ const Footer = ({ siteMetadata }) => {
               </h4>
               <p>{about}</p>
               <section className="footer-social">
-                <Row>
+                <Row className="mb-2">
                   <a
                     href={social.facebook}
                     target="_blank"
