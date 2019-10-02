@@ -85,7 +85,7 @@ const Footer = ({ siteMetadata }) => {
                   </a>
                 </Row>
               </section>
-              <h6>Opening Hours</h6>
+              <h6 className="font-weight-bold text-uppercase">Opening Hours</h6>
               <section className="opening">
                 <hr />
                 <Row className="align-items-center">
