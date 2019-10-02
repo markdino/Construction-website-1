@@ -50,7 +50,7 @@ const ContactPage = () => {
               <h2 className="header-title text-center font-weight-bold">
                 Get in Touch
               </h2>
-              <p className="contact-description text-center text-gray mb-4">
+              <p className="contact-description font-size-90 text-center text-muted mb-4">
                 We are available by fax, e-mail or by phone. You can also use
                 our quick contact form to ask a question about our services and
                 projects we’re working on.
