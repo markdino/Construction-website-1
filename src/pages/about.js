@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import companyThumbnail from "../images/company.jpg"
 import PageHeader from "../components/pageHeader"
 import AboutCard from "../components/aboutCard"
-import "./about.scss"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -36,10 +35,10 @@ const AboutPage = () => {
             <img
               src={companyThumbnail}
               alt="Company Thumbnail"
-              className="img-thumbnail"
+              className="img-thumbnail w-50 mr-3"
               align="left"
             />
-            <p className="content-title">{fullTitle}</p>
+            <p className="content-title font-weight-bold">{fullTitle}</p>
             {aboutContent.map(para => (
               <p>{para}</p>
             ))}
