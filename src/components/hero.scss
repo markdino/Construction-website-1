@@ -5,51 +5,43 @@
   background-position: center center;
   height: 90vh;
 
-  .hero-wrapper {
-    background: rgba($color: #000, $alpha: 0.4);
-    display: flex;
-    align-items: center;
-    text-align: center;
-    height: 100%;
+  .hero-content {
+    padding: 0px 20px;
+    margin: 0px auto;
 
-    .hero-content {
-      padding: 0px 20px;
-      margin: 0px auto;
+    .title {
+      font-weight: bold;
+      font-size: 4.5em;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
 
+    @media screen and (max-width: 990px) {
       .title {
-        font-weight: bold;
-        font-size: 4.5em;
+        font-size: 3em;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      .title {
+        font-size: 2.5em;
+      }
+    }
+
+    .h-separator {
+      border-style: solid;
+      border-width: 1.8px;
+      width: 150px;
+    }
+
+    .hero-description {
+      color: rgba(#fff, 0.8);
+    }
+
+    .hero-buttons {
+      .btn {
+        margin: 5px;
+        width: 200px;
         color: #fff;
-        text-shadow: 1px 1px 2px #000;
-      }
-
-      @media screen and (max-width: 990px) {
-        .title {
-          font-size: 3em;
-        }
-      }
-      @media screen and (max-width: 500px) {
-        .title {
-          font-size: 2.5em;
-        }
-      }
-
-      .h-separator {
-        border-style: solid;
-        border-width: 1.8px;
-        width: 150px;
-      }
-
-      .hero-description {
-        color: rgba(#fff, 0.8);
-      }
-
-      .hero-buttons {
-        .btn {
-          margin: 5px 5px;
-          width: 200px;
-          color: #fff;
-        }
       }
     }
   }

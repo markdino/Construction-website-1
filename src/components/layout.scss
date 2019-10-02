@@ -33,6 +33,10 @@
   background-color: #f2f3f8;
 }
 
+.bg-dark-40 {
+  background: rgba($color: #000, $alpha: 0.4);
+}
+
 .flex-sb {
   display: flex;
   flex-flow: row wrap;

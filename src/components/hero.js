@@ -7,7 +7,7 @@ import "./hero.scss"
 const Hero = ({ title, description }) => {
   return (
     <div className="hero" id="hero">
-      <section className="hero-wrapper">
+      <section className="h-100 d-flex align-items-center text-center bg-dark-40">
         <Container>
           <main className="hero-content">
             <h1 className="title">{title}</h1>
