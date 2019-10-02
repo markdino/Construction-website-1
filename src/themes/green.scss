@@ -194,8 +194,8 @@ footer {
   }
 }
 
-// -------- List1 --------
-.list1 {
+// -------- List --------
+.list {
   .svg {
     svg {
       fill: $color-hover !important;
@@ -215,12 +215,6 @@ footer {
 
 // -------- CareersPage --------
 .careers-page {
-  .careers-content {
-    svg {
-      fill: $color-hover;
-    }
-  }
-
   .table tbody tr td:first-child {
     color: $color-hover;
   }
