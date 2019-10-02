@@ -37,7 +37,9 @@ const Footer = ({ siteMetadata }) => {
         <Container className="footer-content">
           <Row className="section-md">
             <Col className="company-badge" lg="4" sm="12">
-              <h4>Licensed/Accredited</h4>
+              <h4 className="text-center font-weight-bold mt-4 mb-2">
+                Licensed/Accredited
+              </h4>
               <section className="img-badge">
                 <img src={ISO9001} alt="ISO-9001" />
                 <img src={ISO14001} alt="ISO-14001" />
@@ -47,7 +49,9 @@ const Footer = ({ siteMetadata }) => {
               </section>
             </Col>
             <Col className="footer-aboutus" lg="4" sm="6">
-              <h4>About Us</h4>
+              <h4 className="text-center font-weight-bold mt-4 mb-2">
+                About Us
+              </h4>
               <p>{about}</p>
               <section className="footer-social">
                 <Row>
@@ -95,7 +99,9 @@ const Footer = ({ siteMetadata }) => {
               </section>
             </Col>
             <Col className="footer-contact" lg="4" sm="6">
-              <h4>Contacts</h4>
+              <h4 className="text-center font-weight-bold mt-4 mb-2">
+                Contacts
+              </h4>
               <ul>
                 <li className='row className="align-items-start'>
                   <Smartphone /> {contact.mobile}
