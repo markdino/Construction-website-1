@@ -1,11 +1,10 @@
 import React from "react"
-import "./list2.scss"
 
 const List2 = ({ svg, value }) => {
   return (
-    <section className="list2 d-flex flex-nowrap align-content-center">
+    <section className="list d-flex flex-nowrap align-items-baseline">
       <div className="svg mr-3 d-flex align-items-center">{svg}</div>
-      <p className="list-value"> {value || ""}</p>
+      <div className="list-value"> {value || ""}</div>
     </section>
   )
 }
