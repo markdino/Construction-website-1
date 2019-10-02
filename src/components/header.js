@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import "./header.scss"
 import {
   Container,
   Collapse,
@@ -30,7 +29,12 @@ class Header extends Component {
         <Navbar color="dark" dark expand="md" className="navbar fixed-top">
           <Container>
             <Link to="/#hero" className="navbar-brand">
-              <img src={logo} alt={`${siteTitle} Logo`} />
+              <img
+                src={logo}
+                alt={`${siteTitle} Logo`}
+                height="40px"
+                className="mr-2"
+              />
               {siteTitle}
             </Link>
             <NavbarToggler onClick={this.toggle} />
@@ -39,7 +43,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeClassName="nav-active"
+                    activeStyle={{ fontWeight: "bold" }}
                     to="/#hero"
                   >
                     Home
@@ -53,7 +57,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeClassName="nav-active"
+                    activeStyle={{ fontWeight: "bold" }}
                     to="/services/#services"
                   >
                     Services
@@ -62,7 +66,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeClassName="nav-active"
+                    activeStyle={{ fontWeight: "bold" }}
                     to="/careers/#careers"
                   >
                     Careers
@@ -71,7 +75,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeClassName="nav-active"
+                    activeStyle={{ fontWeight: "bold" }}
                     to="/about/#about"
                   >
                     About Us
@@ -80,7 +84,7 @@ class Header extends Component {
                 <NavItem>
                   <Link
                     className="nav-link"
-                    activeClassName="nav-active"
+                    activeStyle={{ fontWeight: "bold" }}
                     to="/contact/#contact"
                   >
                     Contact
