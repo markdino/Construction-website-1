@@ -132,8 +132,8 @@ $color-hover: #218838;
 footer {
   .opening,
   .footer-contact {
-    svg {
-      stroke: $success;
+    li .svg svg {
+      fill: $success !important;
     }
   }
 
