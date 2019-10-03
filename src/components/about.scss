@@ -2,21 +2,6 @@
   background-color: #f0f3f4;
 
   .about-content {
-    .about-list {
-      list-style: none;
-      li {
-        font-weight: bold;
-      }
-    }
-
-    .about-list li::before {
-      content: "\2022";
-      font-weight: bold;
-      font-size: 2em;
-      display: inline-block;
-      width: 1em;
-      margin-left: -1em;
-    }
     .btn {
       padding: 10px 60px;
       margin: 10px 0px;
