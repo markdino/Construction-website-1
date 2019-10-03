@@ -2,12 +2,14 @@ import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import "./footer.scss"
 
+import List2 from "../components/list2"
+
 import Calendar from "../assets/svg/calendar.svg"
 import Clock from "../assets/svg/clock.svg"
-import Smartphone from "../assets/svg/smartphone.svg"
-import Telephone from "../assets/svg/phone.svg"
-import Mail from "../assets/svg/mail.svg"
-import Pin from "../assets/svg/map-pin.svg"
+import Smartphone from "../assets/svg/solid/mobile-alt.svg"
+import Telephone from "../assets/svg/solid/phone-alt.svg"
+import Mail from "../assets/svg/regular/envelope.svg"
+import Pin from "../assets/svg/solid/map-marker-alt.svg"
 
 import FacebookSVG from "../assets/svg/facebook.svg"
 import TwitterSVG from "../assets/svg/twitter.svg"
@@ -104,19 +106,19 @@ const Footer = ({ siteMetadata }) => {
               </h4>
               <ul>
                 <li className='row className="align-items-start'>
-                  <Smartphone /> {contact.mobile}
+                  <List2 svg={<Smartphone />} value={contact.mobile} />
                 </li>
                 <li className='row className="align-items-start'>
-                  <Telephone /> {contact.telephone}
+                  <List2 svg={<Telephone />} value={contact.telephone} />
                 </li>
                 <li className='row className="align-items-start'>
-                  <Mail /> {email}
+                  <List2 svg={<Mail />} value={email} />
                 </li>
                 <li
                   id="footer-address"
                   className='row className="align-items-start'
                 >
-                  <Pin /> {address}
+                  <List2 svg={<Pin />} value={address} />
                 </li>
                 <li></li>
               </ul>
