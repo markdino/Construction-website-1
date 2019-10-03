@@ -10,8 +10,6 @@
 
 .header-title {
   font-size: 3rem;
-  font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 40px;
 }
 
@@ -31,14 +29,23 @@
   padding: 50px 0px;
 }
 
+.list {
+  .svg {
+    width: 18px;
+    min-width: 18px;
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
 .bg-light-gray {
   background-color: #f2f3f8;
 }
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+.bg-dark-40 {
+  background: rgba($color: #000, $alpha: 0.4);
 }
 
 .flex-sb {
@@ -72,6 +79,10 @@
   font-size: 0.95rem;
 }
 
-.font-size-s2 {
+.font-size-90 {
   font-size: 0.9rem;
+}
+
+.font-size-120 {
+  font-size: 1.2rem;
 }

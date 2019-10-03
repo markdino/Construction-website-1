@@ -65,11 +65,7 @@ $color-hover: #218838;
 // -------- About --------
 
 .about {
-  .about-list li::before {
-    color: $color-hover;
-  }
-
-  .about-list li:hover {
+  ul li:hover {
     color: $color-hover;
   }
 
@@ -194,8 +190,8 @@ footer {
   }
 }
 
-// -------- List1 --------
-.list1 {
+// -------- List --------
+.list {
   .svg {
     svg {
       fill: $color-hover !important;
@@ -215,12 +211,6 @@ footer {
 
 // -------- CareersPage --------
 .careers-page {
-  .careers-content {
-    svg {
-      fill: $color-hover;
-    }
-  }
-
   .table tbody tr td:first-child {
     color: $color-hover;
   }

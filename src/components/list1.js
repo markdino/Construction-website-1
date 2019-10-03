@@ -1,12 +1,28 @@
 import React from "react"
-import "./list1.scss"
 
-const List1 = ({ svg, title, value }) => {
+const List1 = ({
+  alignItems,
+  svg,
+  title,
+  className,
+  alignSVG,
+  titleClass,
+  value,
+  valueColor,
+  valueClass,
+}) => {
   return (
-    <section className="list1 d-flex flex-nowrap align-content-center">
-      <div className="svg mr-3 d-flex align-items-center">{svg}</div>
-      <p className="list-title mr-3">{`${title} :`} </p>
-      <p className="list-value text-muted"> {value}</p>
+    <section
+      className={`list d-flex flex-nowrap align-items-${alignItems ||
+        `baseline`} ${className}`}
+    >
+      <div className={`svg mr-3 d-flex align-items-${alignSVG || `center`}`}>
+        {svg}
+      </div>
+      <div className={`mr-3 text-nowrap ${titleClass}`}>{`${title} :`} </div>
+      <div className={`text-${valueColor || `muted`} ${valueClass}`}>
+        {value}
+      </div>
     </section>
   )
 }

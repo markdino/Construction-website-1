@@ -16,8 +16,10 @@ class Project extends Component {
     return (
       <div className="project section-lg" id="project">
         <Container>
-          <h2 className="header-title center">{title}</h2>
-          <section className="gallery-cat center">
+          <h2 className="header-title text-center font-weight-bold text-uppercase">
+            {title}
+          </h2>
+          <section className="gallery-cat text-center">
             {projCategories.map((projCategory, index) => {
               return (
                 <Badge

@@ -30,11 +30,13 @@ const CareersPage = ({ data }) => {
               </section>
             </Col>
             <Col md="6">
-              <section className="careers-content">
-                <h2 className="header-title text-center">
+              <section className="careers-content mr-5 ml-5">
+                <h2 className="header-title text-center font-weight-bold text-capitalize">
                   {careersInfo.title}
                 </h2>
-                <p className="careers-description">{careersInfo.about}</p>
+                <p className="careers-description font-size-90 text-secondary mt-2 mb-3">
+                  {careersInfo.about}
+                </p>
                 <ul className="careers-list">
                   {careersInfo.benefits.map(benefit => {
                     return (

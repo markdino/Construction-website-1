@@ -9,18 +9,6 @@ footer {
     background: rgba($color: #000, $alpha: 0.6);
   }
 
-  h4 {
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-    margin: 40px 0px 20px;
-  }
-
-  h6 {
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
   hr {
     border-color: rgba($color: #fff, $alpha: 0.6);
     margin: 5px 0px;
@@ -81,10 +69,6 @@ footer {
   }
 
   .footer-social {
-    .row {
-      margin: 0px 0px 10px;
-    }
-
     a {
       padding: 7px 10px 9px;
       margin-right: 10px;
