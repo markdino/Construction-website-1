@@ -11,11 +11,13 @@ const About = ({ about }) => {
       <Container>
         <Row>
           <Col md="6">
-            <section className="about-content">
+            <section className="about-content mr-5 ml-5">
               <h2 className="header-title font-weight-bold text-uppercase">
                 About Us
               </h2>
-              <p className="about-description">{about}</p>
+              <p className="about-description font-size-90 text-secondary mt-2 mb-2">
+                {about}
+              </p>
               <ul className="about-list">
                 <li>Professional Staff</li>
                 <li>Regular Reporting</li>
