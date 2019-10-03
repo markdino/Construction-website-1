@@ -65,11 +65,7 @@ $color-hover: #d39e00;
 // -------- About --------
 
 .about {
-  .about-list li::before {
-    color: $color-hover;
-  }
-
-  .about-list li:hover {
+  ul li:hover {
     color: $color-hover;
   }
 
