@@ -40,7 +40,7 @@ const Footer = ({ siteMetadata }) => {
               <h4 className="text-center font-weight-bold mt-4 mb-2">
                 Licensed/Accredited
               </h4>
-              <section className="img-badge">
+              <section className="img-badge d-flex flex-wrap justify-content-around align-items-center">
                 <img src={ISO9001} alt="ISO-9001" />
                 <img src={ISO14001} alt="ISO-14001" />
                 <img src={ISO45001} alt="ISO-45001" />
