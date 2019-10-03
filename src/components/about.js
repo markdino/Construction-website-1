@@ -26,7 +26,6 @@ const About = ({ about }) => {
                   <List2
                     svg={<Square />}
                     value="Professional Staff"
-                    alignItems="center"
                     className="font-weight-bold my-2"
                   />
                 </li>
@@ -34,7 +33,6 @@ const About = ({ about }) => {
                   <List2
                     svg={<Square />}
                     value="Regular Reporting"
-                    alignItems="center"
                     className="font-weight-bold my-2"
                   />
                 </li>
@@ -42,7 +40,6 @@ const About = ({ about }) => {
                   <List2
                     svg={<Square />}
                     value="Quality Materials"
-                    alignItems="center"
                     className="font-weight-bold my-2"
                   />
                 </li>
