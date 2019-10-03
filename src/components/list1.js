@@ -16,7 +16,9 @@ const List1 = ({
       className={`list d-flex flex-nowrap align-items-${alignItems ||
         `start`} ${className || ""}`}
     >
-      <div className={`svg mr-3 d-flex align-items-${alignSVG || `start`}`}>
+      <div
+        className={`svg mr-3 pt-1 d-flex align-items-${alignSVG || `start`}`}
+      >
         {svg}
       </div>
       <div className={`mr-3 text-nowrap ${titleClass}`}>{`${title} :`} </div>
