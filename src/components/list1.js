@@ -14,9 +14,9 @@ const List1 = ({
   return (
     <section
       className={`list d-flex flex-nowrap align-items-${alignItems ||
-        `center`} ${className}`}
+        `start`} ${className || ""}`}
     >
-      <div className={`svg mr-3 d-flex align-items-${alignSVG || `center`}`}>
+      <div className={`svg mr-3 d-flex align-items-${alignSVG || `start`}`}>
         {svg}
       </div>
       <div className={`mr-3 text-nowrap ${titleClass}`}>{`${title} :`} </div>
