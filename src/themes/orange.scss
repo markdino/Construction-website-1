@@ -132,7 +132,7 @@ $color-hover: #d39e00;
 footer {
   .opening,
   .footer-contact {
-    li .svg svg {
+    .list .svg svg {
       fill: $warning !important;
     }
   }
