@@ -54,7 +54,7 @@ const Footer = ({ siteMetadata }) => {
               <h4 className="text-center font-weight-bold mt-4 mb-2">
                 About Us
               </h4>
-              <p>{about}</p>
+              <p className="font-size-80 text-justify">{about}</p>
               <section className="footer-social">
                 <Row className="mb-2">
                   <a
