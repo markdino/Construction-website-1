@@ -4,8 +4,8 @@ import "./footer.scss"
 
 import List2 from "../components/list2"
 
-import Calendar from "../assets/svg/calendar.svg"
-import Clock from "../assets/svg/clock.svg"
+import Calendar from "../assets/svg/regular/calendar-alt.svg"
+import Clock from "../assets/svg/regular/clock.svg"
 import Smartphone from "../assets/svg/solid/mobile-alt.svg"
 import Telephone from "../assets/svg/solid/phone-alt.svg"
 import Mail from "../assets/svg/regular/envelope.svg"
@@ -88,15 +88,21 @@ const Footer = ({ siteMetadata }) => {
                 </Row>
               </section>
               <h6 className="font-weight-bold text-uppercase">Opening Hours</h6>
-              <section className="opening">
+              <section className="opening ml-5">
                 <hr />
-                <Row className="align-items-center">
-                  <Calendar /> {opening.day}
-                </Row>
+                <List2
+                  className="font-size-90"
+                  svgSize="sm"
+                  svg={<Calendar />}
+                  value={opening.day}
+                />
                 <hr />
-                <Row className="align-items-center">
-                  <Clock /> {opening.hour}
-                </Row>
+                <List2
+                  className="font-size-90"
+                  svgSize="sm"
+                  svg={<Clock />}
+                  value={opening.hour}
+                />
                 <hr />
               </section>
             </Col>
