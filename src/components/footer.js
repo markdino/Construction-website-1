@@ -33,6 +33,13 @@ const Footer = ({ siteMetadata }) => {
     opening,
     author,
   } = siteMetadata
+  const badges = [
+    { img: ISO14001, alt: "ISO-14001" },
+    { img: ISO9001, alt: "ISO-9001" },
+    { img: ISO45001, alt: "ISO-45001" },
+    { img: PCAB, alt: "PCAB LICENSE" },
+    { img: PCA, alt: "PCA" },
+  ]
   return (
     <footer>
       <section className="footer-wrapper">
@@ -43,11 +50,14 @@ const Footer = ({ siteMetadata }) => {
                 Licensed/Accredited
               </h4>
               <section className="img-badge d-flex flex-wrap justify-content-around align-items-center">
-                <img src={ISO9001} alt="ISO-9001" />
-                <img src={ISO14001} alt="ISO-14001" />
-                <img src={ISO45001} alt="ISO-45001" />
-                <img src={PCAB} alt="PCAB LICENSE" />
-                <img src={PCA} alt="PCA" />
+                {badges.map(badge => (
+                  <img
+                    width="90px"
+                    className="my-2"
+                    src={badge.img}
+                    alt={badge.alt}
+                  />
+                ))}
               </section>
             </Col>
             <Col className="footer-aboutus" lg="4" sm="6">
