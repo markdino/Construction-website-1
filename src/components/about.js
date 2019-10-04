@@ -25,6 +25,7 @@ const About = ({ about }) => {
                 <li>
                   <List2
                     svg={<Square />}
+                    svgSize="sm"
                     value="Professional Staff"
                     className="font-weight-bold my-2"
                   />
@@ -32,6 +33,7 @@ const About = ({ about }) => {
                 <li>
                   <List2
                     svg={<Square />}
+                    svgSize="sm"
                     value="Regular Reporting"
                     className="font-weight-bold my-2"
                   />
@@ -39,6 +41,7 @@ const About = ({ about }) => {
                 <li>
                   <List2
                     svg={<Square />}
+                    svgSize="sm"
                     value="Quality Materials"
                     className="font-weight-bold my-2"
                   />
