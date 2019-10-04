@@ -1,5 +1,8 @@
 @import "../themes/bootstrap-color.scss";
 footer {
+  * {
+    transition-duration: 0.15s;
+  }
   background-image: url("../images/philippines.jpg");
   background-size: cover;
   color: #fff;

@@ -1,4 +1,8 @@
 .news-card {
+  * {
+    transition-duration: 0.3s;
+  }
+
   display: flex;
   height: 300px;
   width: 100%;

@@ -1,4 +1,8 @@
 .about {
+  * {
+    transition-duration: 0.05s;
+  }
+
   background-color: #f0f3f4;
 
   .about-content {
