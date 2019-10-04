@@ -110,23 +110,19 @@ const Footer = ({ siteMetadata }) => {
               <h4 className="text-center font-weight-bold mt-4 mb-2">
                 Contacts
               </h4>
-              <ul>
-                <li className='row className="align-items-start'>
+              <ul className="list-unstyled">
+                <li className="my-2">
                   <List2 svg={<Smartphone />} value={contact.mobile} />
                 </li>
-                <li className='row className="align-items-start'>
+                <li className="my-2">
                   <List2 svg={<Telephone />} value={contact.telephone} />
                 </li>
-                <li className='row className="align-items-start'>
+                <li className="my-2">
                   <List2 svg={<Mail />} value={email} />
                 </li>
-                <li
-                  id="footer-address"
-                  className='row className="align-items-start'
-                >
+                <li className="my-2">
                   <List2 svg={<Pin />} value={address} />
                 </li>
-                <li></li>
               </ul>
             </Col>
           </Row>
