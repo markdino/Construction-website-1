@@ -37,7 +37,7 @@ const CareersPage = ({ data }) => {
                 <p className="careers-description font-size-90 text-secondary mt-2 mb-3">
                   {careersInfo.about}
                 </p>
-                <ul className="careers-list">
+                <ul className="careers-list list-unstyled">
                   {careersInfo.benefits.map(benefit => {
                     return (
                       <li>
@@ -47,8 +47,8 @@ const CareersPage = ({ data }) => {
                   })}
                 </ul>
                 <Link to="/contact/#contact" className="careers-btn-lnk">
-                  <Button className="text-dark text-uppercase font-weight-bold">
-                    Join OUr Team Now
+                  <Button className="text-dark text-uppercase font-weight-bold py-2 px-4 my-2">
+                    Join Our Team Now
                   </Button>
                 </Link>
               </section>

@@ -25,24 +25,24 @@ const About = ({ about }) => {
                 <li>
                   <List2
                     svg={<Square />}
+                    svgSize="sm"
                     value="Professional Staff"
-                    alignItems="center"
                     className="font-weight-bold my-2"
                   />
                 </li>
                 <li>
                   <List2
                     svg={<Square />}
+                    svgSize="sm"
                     value="Regular Reporting"
-                    alignItems="center"
                     className="font-weight-bold my-2"
                   />
                 </li>
                 <li>
                   <List2
                     svg={<Square />}
+                    svgSize="sm"
                     value="Quality Materials"
-                    alignItems="center"
                     className="font-weight-bold my-2"
                   />
                 </li>

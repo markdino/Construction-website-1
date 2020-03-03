@@ -2,12 +2,14 @@ import React from "react"
 import { Container, Row, Col } from "reactstrap"
 import "./footer.scss"
 
-import Calendar from "../assets/svg/calendar.svg"
-import Clock from "../assets/svg/clock.svg"
-import Smartphone from "../assets/svg/smartphone.svg"
-import Telephone from "../assets/svg/phone.svg"
-import Mail from "../assets/svg/mail.svg"
-import Pin from "../assets/svg/map-pin.svg"
+import List2 from "../components/list2"
+
+import Calendar from "../assets/svg/regular/calendar-alt.svg"
+import Clock from "../assets/svg/regular/clock.svg"
+import Smartphone from "../assets/svg/solid/mobile-alt.svg"
+import Telephone from "../assets/svg/solid/phone-alt.svg"
+import Mail from "../assets/svg/regular/envelope.svg"
+import Pin from "../assets/svg/solid/map-marker-alt.svg"
 
 import FacebookSVG from "../assets/svg/facebook.svg"
 import TwitterSVG from "../assets/svg/twitter.svg"
@@ -31,28 +33,38 @@ const Footer = ({ siteMetadata }) => {
     opening,
     author,
   } = siteMetadata
+  const badges = [
+    { img: ISO14001, alt: "ISO-14001" },
+    { img: ISO9001, alt: "ISO-9001" },
+    { img: ISO45001, alt: "ISO-45001" },
+    { img: PCAB, alt: "PCAB LICENSE" },
+    { img: PCA, alt: "PCA" },
+  ]
   return (
     <footer>
       <section className="footer-wrapper">
-        <Container className="footer-content">
+        <Container className="footer-content text-white">
           <Row className="section-md">
             <Col className="company-badge" lg="4" sm="12">
               <h4 className="text-center font-weight-bold mt-4 mb-2">
                 Licensed/Accredited
               </h4>
-              <section className="img-badge">
-                <img src={ISO9001} alt="ISO-9001" />
-                <img src={ISO14001} alt="ISO-14001" />
-                <img src={ISO45001} alt="ISO-45001" />
-                <img src={PCAB} alt="PCAB LICENSE" />
-                <img src={PCA} alt="PCA" />
+              <section className="img-badge d-flex flex-wrap justify-content-around align-items-center">
+                {badges.map(badge => (
+                  <img
+                    width="90px"
+                    className="my-2"
+                    src={badge.img}
+                    alt={badge.alt}
+                  />
+                ))}
               </section>
             </Col>
             <Col className="footer-aboutus" lg="4" sm="6">
               <h4 className="text-center font-weight-bold mt-4 mb-2">
                 About Us
               </h4>
-              <p>{about}</p>
+              <p className="font-size-80 text-justify">{about}</p>
               <section className="footer-social">
                 <Row className="mb-2">
                   <a
@@ -86,15 +98,21 @@ const Footer = ({ siteMetadata }) => {
                 </Row>
               </section>
               <h6 className="font-weight-bold text-uppercase">Opening Hours</h6>
-              <section className="opening">
+              <section className="opening ml-5">
                 <hr />
-                <Row className="align-items-center">
-                  <Calendar /> {opening.day}
-                </Row>
+                <List2
+                  className="font-size-90"
+                  svgSize="sm"
+                  svg={<Calendar />}
+                  value={opening.day}
+                />
                 <hr />
-                <Row className="align-items-center">
-                  <Clock /> {opening.hour}
-                </Row>
+                <List2
+                  className="font-size-90"
+                  svgSize="sm"
+                  svg={<Clock />}
+                  value={opening.hour}
+                />
                 <hr />
               </section>
             </Col>
@@ -102,23 +120,19 @@ const Footer = ({ siteMetadata }) => {
               <h4 className="text-center font-weight-bold mt-4 mb-2">
                 Contacts
               </h4>
-              <ul>
-                <li className='row className="align-items-start'>
-                  <Smartphone /> {contact.mobile}
+              <ul className="list-unstyled">
+                <li className="my-2">
+                  <List2 svg={<Smartphone />} value={contact.mobile} />
                 </li>
-                <li className='row className="align-items-start'>
-                  <Telephone /> {contact.telephone}
+                <li className="my-2">
+                  <List2 svg={<Telephone />} value={contact.telephone} />
                 </li>
-                <li className='row className="align-items-start'>
-                  <Mail /> {email}
+                <li className="my-2">
+                  <List2 svg={<Mail />} value={email} />
                 </li>
-                <li
-                  id="footer-address"
-                  className='row className="align-items-start'
-                >
-                  <Pin /> {address}
+                <li className="my-2">
+                  <List2 svg={<Pin />} value={address} />
                 </li>
-                <li></li>
               </ul>
             </Col>
           </Row>
