@@ -43,7 +43,7 @@ const Footer = ({ siteMetadata }) => {
   return (
     <footer>
       <section className="footer-wrapper">
-        <Container className="footer-content">
+        <Container className="footer-content text-white">
           <Row className="section-md">
             <Col className="company-badge" lg="4" sm="12">
               <h4 className="text-center font-weight-bold mt-4 mb-2">
